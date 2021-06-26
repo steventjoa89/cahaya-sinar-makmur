@@ -18,17 +18,9 @@ for(var i=0;i<productCount;i++){
 
 		document.getElementById("product-image").innerHTML = prodImage;
 
-		// document.getElementById("product-image").innerHTML = `
-		// <div class="swiper-slide">
-		// 	<img src="assets/img/portfolio/portfolio-1.jpg" alt="">
-		// </div>
-		// <div class="swiper-slide">
-		// 	<img src="assets/img/portfolio/portfolio-2.jpg" alt="">
-		// </div>
-		// `;
-
 		// PRODUCT INFORMATION
 		document.getElementById("product-name").innerHTML = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+		document.getElementById("product-brand").innerHTML = xmlDoc.getElementsByTagName("brand")[i].childNodes[0].nodeValue;
 		document.getElementById("product-category").innerHTML = xmlDoc.getElementsByTagName("category")[i].childNodes[0].nodeValue;
 		document.getElementById("product-grade").innerHTML = xmlDoc.getElementsByTagName("grade")[i].childNodes[0].nodeValue;
 		document.getElementById("product-origin").innerHTML = xmlDoc.getElementsByTagName("origin")[i].childNodes[0].nodeValue;

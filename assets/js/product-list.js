@@ -5,6 +5,7 @@ let productList = `
 	<product>
 		<id>1</id>
 		<name>Trisodium Phosphate</name>
+		<brand>-</brand>
 		<grade>Industrial Grade</grade>
 		<category>General</category>
 		<origin>China</origin>
@@ -19,6 +20,7 @@ let productList = `
 	<product>
 		<id>2</id>
 		<name>Sodium Bicarbonate</name>
+		<brand>Malan</brand>
 		<grade>Industrial Grade</grade>
 		<category>general</category>
 		<origin>China</origin>

@@ -11,6 +11,7 @@ let productList = `
 		<origin>China</origin>
 		<package>Sak</package>
 		<weight>25</weight>
+		<price>175.000,00</price>
 		<description>Trisodium Phosphate description.</description>
 		<images>
 			<image>${imageUrl}trisodium-phosphate.jpg</image>
@@ -26,6 +27,7 @@ let productList = `
 		<origin>China</origin>
 		<package>Sak</package>
 		<weight>25</weight>
+		<price>150.000,00</price>
 		<description>Sodium Bicarbonate description.</description>
 		<images>
 			<image>${imageUrl}sodium-bicarbonate-malan.jpg</image>

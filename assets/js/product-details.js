@@ -26,6 +26,7 @@ for(var i=0;i<productCount;i++){
 		document.getElementById("product-origin").innerHTML = xmlDoc.getElementsByTagName("origin")[i].childNodes[0].nodeValue;
 		document.getElementById("product-package").innerHTML = xmlDoc.getElementsByTagName("package")[i].childNodes[0].nodeValue;
 		document.getElementById("product-weight").innerHTML = xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue+" Kg";
+		document.getElementById("product-price").innerHTML = "Rp " + xmlDoc.getElementsByTagName("price")[i].childNodes[0].nodeValue;
 
 		// PRODUCT DESCRIPTION
 		document.getElementById("product-description").innerHTML = xmlDoc.getElementsByTagName("description")[i].childNodes[0].nodeValue;

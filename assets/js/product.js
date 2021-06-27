@@ -1,5 +1,5 @@
 // IMPORTANT NOTE
-// IMAGE SIZE SHOULD BE 800x600
+// IMAGE SIZE SHOULD BE 800 x 600
 
 let parser = new DOMParser();
 let xmlDoc = parser.parseFromString(productList,"text/xml");

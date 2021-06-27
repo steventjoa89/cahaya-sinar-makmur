@@ -14,8 +14,8 @@ let productList = `
 		<price>175.000,00</price>
 		<description>Trisodium Phosphate description.</description>
 		<images>
-			<image>${imageUrl}trisodium-phosphate.jpg</image>
-			<image>${imageUrl}trisodium-phosphate.jpg</image>
+			<image>${imageUrl}trisodium-phosphate-1.jpg</image>
+			<image>${imageUrl}trisodium-phosphate-2.jpg</image>
 		</images>
 	</product>
 	<product>
@@ -30,8 +30,8 @@ let productList = `
 		<price>150.000,00</price>
 		<description>Sodium Bicarbonate description.</description>
 		<images>
-			<image>${imageUrl}sodium-bicarbonate-malan.jpg</image>
-			<image>${imageUrl}sodium-bicarbonate-malan.jpg</image>
+			<image>${imageUrl}sodium-bicarbonate-malan-1.jpg</image>
+			<image>${imageUrl}sodium-bicarbonate-malan-2.jpg</image>
 		</images>
 	</product>
 </product-list>

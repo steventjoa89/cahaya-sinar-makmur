@@ -1,8 +1,3 @@
-/**
-* PHP Email Form Validation - v3.1
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
-*/
 (function () {
   "use strict";
 
@@ -13,33 +8,48 @@
       event.preventDefault();
 
       let thisForm = this;
-      let formData = new FormData( thisForm );
-
-      // Write into text file inside folder
-      let sentMessage = (folderLocation, fileName) => {
-        try {
-          thisForm.querySelector('.loading').classList.add('d-block');  
-          console.log(`name: ${formData.get("name")}`);
-          console.log(`email: ${formData.get("email")}`);
-          console.log(`subject: ${formData.get("subject")}`);
-          console.log(`message: ${formData.get("message")}`);
-
-          // TODO - PARSING THE DATA
-          throw 200
-
-          // TODO SUCCESS
-          displaySuccess(thisForm, 'Message successfully has been sent!')
-        } catch (error) {
-          displayError(thisForm, 'Error: Message cannot be sent at the moment. Please try again later.')
-          console.error(error);
-        }
-      }
+      let name1= encodeURI("123@yahoo.com");
+      var action = thisForm.getAttribute('action');
       
-      let folderLocation = "./";
-      let fileName = "12345.txt";
-      sentMessage(folderLocation, fileName);
+      if( ! action ) {
+        displayError(thisForm, 'The form action property is not set!')
+        return;
+      }
+      thisForm.querySelector('.loading').classList.add('d-block');
+      thisForm.querySelector('.error-message').classList.remove('d-block');
+      thisForm.querySelector('.sent-message').classList.remove('d-block');
+
+      let formData = new FormData( thisForm );
+      action += `?name=${encodeURI(formData.get("name"))}&email=${encodeURI(formData.get("email"))}&subject=${encodeURI(formData.get("subject"))}&message=${encodeURI(formData.get("message"))}`;
+
+      jsp_email_form_submit(thisForm, action, formData);
     });
   });
+
+  function jsp_email_form_submit(thisForm, action, formData) {
+    fetch(action, {
+      method: 'GET',
+    })
+    .then(response => {
+      if( response.ok ) {
+        return response.text()
+      } else {
+        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
+      }
+    })
+    .then(data => {
+      thisForm.querySelector('.loading').classList.remove('d-block');
+      if (data.trim() == 'OK') {
+        thisForm.querySelector('.sent-message').classList.add('d-block');
+        thisForm.reset(); 
+      } else {
+        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
+      }
+    })
+    .catch((error) => {
+      displayError(thisForm, error);
+    });
+  }
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');

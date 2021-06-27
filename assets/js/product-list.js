@@ -5,7 +5,8 @@ let myRate = 0.15;
 // IMAGE LOCATION
 let imageUrl = `assets/img/products/`;
 
-let productList = `
+let productList = 
+`
 <product-list>
 	<product>
 		<id>1</id>
@@ -16,7 +17,7 @@ let productList = `
 		<origin>China</origin>
 		<package>Sak</package>
 		<weight>25</weight>
-		<price>0.363</price>
+		<price>0.395</price>
 		<description>-</description>
 		<images>
 			<image>${imageUrl}trisodium-phosphate-1.jpg</image>

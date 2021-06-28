@@ -57,7 +57,7 @@ let productList =
     <weight>25</weight>
     <color>Putih</color>
     <appearance>Kristal Transparan</appearance>
-    <price>0.42</price>
+    <price>0.52</price>
 
     <images>
 			<image>${imageUrl}sodium-thiosulphate-1.jpg</image>
@@ -104,6 +104,33 @@ let productList =
     <description>
 			Nama Lain: Baking soda / Soda Kue&lt;br&gt;
     </description>
-</product>
+	</product>
+
+	<product>
+		<id>4</id>
+		<name>Sodium Tripolyphosphate</name>
+		<category>Phosphate</category>
+		<formula>Na5O10P3</formula>
+		<application>Industrial</application>
+		<purity>94%</purity>
+		<brand>-</brand>
+		<origin>China</origin>
+		<package>Bag</package>
+		<weight>25</weight>
+		<color>Granular Putih</color>
+		<appearance>Bubuk Putih</appearance>
+		<price>0.40</price>
+		
+		<images>
+			<image>${imageUrl}sodium-tripolyphosphate-1.jpg</image>
+			<image>${imageUrl}sodium-tripolyphosphate-2.jpg</image>
+		</images>
+
+		<description>
+			Nama Lain: Sodium Tripolyphosphate STPP&lt;br&gt;&lt;br&gt;
+			Kegunaan: Dalam dunia makanan, STPP digunakan sebagai pengawet. Sodium Tripolyphosphate juga dapat digunakan untuk mengawetkan makanan seperti daging merah, unggas dan makanan laut.&lt;br&gt;
+			Mayoritas STPP digunakan sebagai bahan komponen dari deterjen komersial. Kegunaan lainnya juga untuk keramik, penyamakan kulit, penghambat api, kertas, tekstik, karet, fermentasi dan anti-beku.
+		</description>
+	</product>
 </product-list>
 `

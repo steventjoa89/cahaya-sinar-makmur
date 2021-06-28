@@ -20,24 +20,30 @@ for(var i=0;i<productCount;i++){
 
 		// PRODUCT INFORMATION
 		document.getElementById("product-name").innerHTML = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-		document.getElementById("product-brand").innerHTML = xmlDoc.getElementsByTagName("brand")[i].childNodes[0].nodeValue;
 		document.getElementById("product-category").innerHTML = xmlDoc.getElementsByTagName("category")[i].childNodes[0].nodeValue;
-		document.getElementById("product-grade").innerHTML = xmlDoc.getElementsByTagName("grade")[i].childNodes[0].nodeValue;
+		document.getElementById("product-formula").innerHTML = xmlDoc.getElementsByTagName("formula")[i].childNodes[0].nodeValue;
+		document.getElementById("product-application").innerHTML = xmlDoc.getElementsByTagName("application")[i].childNodes[0].nodeValue;
+		document.getElementById("product-purity").innerHTML = xmlDoc.getElementsByTagName("purity")[i].childNodes[0].nodeValue;
+		document.getElementById("product-brand").innerHTML = xmlDoc.getElementsByTagName("brand")[i].childNodes[0].nodeValue;
 		document.getElementById("product-origin").innerHTML = xmlDoc.getElementsByTagName("origin")[i].childNodes[0].nodeValue;
 		document.getElementById("product-package").innerHTML = xmlDoc.getElementsByTagName("package")[i].childNodes[0].nodeValue;
-		document.getElementById("product-weight").innerHTML = xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue+" Kg";
+		document.getElementById("product-weight").innerHTML = xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue;
+		document.getElementById("product-color").innerHTML = xmlDoc.getElementsByTagName("color")[i].childNodes[0].nodeValue;
+		document.getElementById("product-appearance").innerHTML = xmlDoc.getElementsByTagName("appearance")[i].childNodes[0].nodeValue;
+		
 		// PRICE
 		let getProdPrice = (prodUsdPrice) => {
 			let numWithThousandSep = (x) => {
 				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 			}
-			return numWithThousandSep(Math.ceil((prodUsdPrice * usdIdrRate * xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue)*(1+myRate)))+",00";
+
+			return numWithThousandSep(Math.ceil((prodUsdPrice * usdIdrRate * xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue)*(1+myRate)));
 		}
-		let prodPrice = 
 		document.getElementById("product-price").innerHTML = "Rp " + getProdPrice(xmlDoc.getElementsByTagName("price")[i].childNodes[0].nodeValue);
 
 		// PRODUCT DESCRIPTION
-		document.getElementById("product-description").innerHTML = xmlDoc.getElementsByTagName("description")[i].childNodes[0].nodeValue;
+		console.log();
+		document.getElementById("product-description").innerHTML = xmlDoc.getElementsByTagName("description")[i].childNodes[0].nodeValue.trim();
 		break;
 	}
 }

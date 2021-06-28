@@ -30,7 +30,7 @@ for(var i=0;i<productCount;i++){
 		document.getElementById("product-weight").innerHTML = xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue;
 		document.getElementById("product-color").innerHTML = xmlDoc.getElementsByTagName("color")[i].childNodes[0].nodeValue;
 		document.getElementById("product-appearance").innerHTML = xmlDoc.getElementsByTagName("appearance")[i].childNodes[0].nodeValue;
-		
+
 		// PRICE
 		let getProdPrice = (prodUsdPrice) => {
 			let numWithThousandSep = (x) => {

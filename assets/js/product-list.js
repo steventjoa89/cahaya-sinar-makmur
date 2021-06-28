@@ -94,7 +94,7 @@ let productList =
     <weight>25</weight>
     <color>Putih</color>
     <appearance>Bubuk</appearance>
-    <price>0.42</price>
+    <price>0.32</price>
 
     <images>
 			<image>${imageUrl}sodium-bicarbonate-malan-1.jpg</image>
@@ -103,6 +103,7 @@ let productList =
 
     <description>
 			Nama Lain: Baking soda / Soda Kue&lt;br&gt;
+			*note*
     </description>
 	</product>
 
@@ -130,6 +131,34 @@ let productList =
 			Nama Lain: Sodium Tripolyphosphate STPP&lt;br&gt;&lt;br&gt;
 			Kegunaan: Dalam dunia makanan, STPP digunakan sebagai pengawet. Sodium Tripolyphosphate juga dapat digunakan untuk mengawetkan makanan seperti daging merah, unggas dan makanan laut.&lt;br&gt;
 			Mayoritas STPP digunakan sebagai bahan komponen dari deterjen komersial. Kegunaan lainnya juga untuk keramik, penyamakan kulit, penghambat api, kertas, tekstik, karet, fermentasi dan anti-beku.
+		</description>
+	</product>
+
+	<product>
+		<id>5</id>
+		<name>Caustic Soda Flakes</name>
+		<category>Caustic Soda</category>
+		<formula>NAOH</formula>
+		<application>Food and Industrial</application>
+		<purity>-</purity>
+		<brand>-</brand>
+		<origin>China</origin>
+		<package>Bag</package>
+		<weight>25</weight>
+		<color>Putih</color>
+		<appearance>Flake/Serpihan</appearance>
+		<price>0.40</price>
+		<boilingpoint>1390°C</boilingpoint>
+		<meltingpoint>318.4°C</meltingpoint>
+		
+		<images>
+			<image>${imageUrl}caustic-soda-flakes-1.jpg</image>
+			<image>${imageUrl}caustic-soda-flakes-2.jpg</image>
+		</images>
+
+		<description>
+			Kegunaan:&lt;br&gt;
+			Banyak digunakan dalam dunia industri seperti proses kimia (40%), manufaktur pulp and paper (17%), treatment air (5%), produksi alumunium (8%), sabun, deterjen dan tekstil (12%) dan lain-lain.
 		</description>
 	</product>
 </product-list>

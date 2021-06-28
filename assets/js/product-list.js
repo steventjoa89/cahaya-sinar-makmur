@@ -22,7 +22,7 @@ let productList =
 		<weight>25</weight>
 		<color>Putih</color>
 		<appearance>Bubuk Putih</appearance>
-		<price>0.42</price>
+		<price>0.40</price>
 		
 		<images>
 			<image>${imageUrl}trisodium-phosphate-1.jpg</image>
@@ -30,6 +30,7 @@ let productList =
 		</images>
 
 		<description>
+			Kegunaan:&lt;br&gt;
 			&lt;ol&gt;
 				&lt;li&gt;Penghambat skala boiler.&lt;/li&gt;
 				&lt;li&gt;Memperbaiki untuk percetakan dan pencelupan bahan fabric pakaian.&lt;/li&gt;
@@ -45,7 +46,7 @@ let productList =
 
 	<product>
     <id>2</id>
-    <name>Sodium Thiosulphate Anhydrous</name>
+    <name>Sodium Thiosulphate</name>
     <category>Sulphate</category>
     <formula>Na2S2O3.5H2O</formula>
     <application>plating, leather, sulfur dye</application>
@@ -64,6 +65,8 @@ let productList =
     </images>
 
     <description>
+			Nama Lain: Sodium Thiosulphate Anhydrous&lt;br&gt;
+			Kegunaan:&lt;br&gt;
 			&lt;ol&gt;
 				&lt;li&gt;Digunakan dalam proses fotografi&lt;/li&gt;
 				&lt;li&gt;Aplikasi lempeng listrik dalam baja/besi&lt;/li&gt;
@@ -77,5 +80,30 @@ let productList =
 			&lt;/ol&gt;
     </description>
 	</product>
+
+	<product>
+    <id>3</id>
+    <name>Sodium Bicarbonate</name>
+    <category>Food</category>
+    <formula>NAHCO3</formula>
+    <application>Food and Detergent</application>
+    <purity>99%</purity>
+    <brand>Malan</brand>
+    <origin>China</origin>
+    <package>Bag</package>
+    <weight>25</weight>
+    <color>Putih</color>
+    <appearance>Bubuk</appearance>
+    <price>0.42</price>
+
+    <images>
+			<image>${imageUrl}sodium-bicarbonate-malan-1.jpg</image>
+			<image>${imageUrl}sodium-bicarbonate-malan-2.jpg</image>
+    </images>
+
+    <description>
+			Nama Lain: Baking soda / Soda Kue&lt;br&gt;
+    </description>
+</product>
 </product-list>
 `

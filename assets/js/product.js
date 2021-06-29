@@ -5,7 +5,7 @@ let parser = new DOMParser();
 let xmlDoc = parser.parseFromString(productList,"text/xml");
 
 // Column Setting
-let colSpan = 3;
+let colSpan = 4;
 
 // Product Sorting
 let productCount = xmlDoc.getElementsByTagName("product").length;

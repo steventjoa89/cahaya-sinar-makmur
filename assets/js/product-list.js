@@ -161,5 +161,33 @@ let productList =
 			Banyak digunakan dalam dunia industri seperti proses kimia (40%), manufaktur pulp and paper (17%), treatment air (5%), produksi alumunium (8%), sabun, deterjen dan tekstil (12%) dan lain-lain.
 		</description>
 	</product>
+
+	<product>
+		<id>6</id>
+		<name>Calcium Chloride</name>
+		<category>Desiccant</category>
+		<formula>CACL</formula>
+		<application>Food &amp; Industrial</application>
+		<purity>74-77%, 94-96%</purity>
+		<brand>-</brand>
+		<origin>China</origin>
+		<package>Bag</package>
+		<weight>25</weight>
+		<color>Putih</color>
+		<appearance>Serpihan, Bubuk, Granular</appearance>
+		<price>0</price>
+		
+		<images>
+			<image>${imageUrl}calcium-chloride-1.jpg</image>
+			<image>${imageUrl}calcium-chloride-2.jpg</image>
+		</images>
+
+		<description>
+			Nama Lain: Calcium Chloride Dihydrate&lt;br&gt;&lt;br&gt;
+			Kegunaan:&lt;br&gt;
+			Kalsium klorida banyak digunakan dalam pencairan es, pengeboran minyak dan gas, penyerap kelembaban, pengering, “removing agent”, pengumpul debu, pendingin, anti-beku dan banyak diaplikasikan ke dalam industri karet dan minyak bumi.
+		</description>
+	</product>
+
 </product-list>
 `

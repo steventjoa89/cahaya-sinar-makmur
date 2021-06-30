@@ -795,6 +795,70 @@ var productList =
 		</description>
 	</product>
 
+	<product>
+		<id>26</id>
+		<name>Sodium Nitrite</name>
+		<category>Nitrate</category>
+		<formula>NaNO2</formula>
+		<application>Industrial</application>
+		<purity>98.5%</purity>
+		<brand>-</brand>
+		<origin>China</origin>
+		<package>Bag</package>
+		<weight>25</weight>
+		<color>Putih</color>
+		<appearance>Bubuk</appearance>
+		<price>0</price>
+		
+		<images>
+			<image>${imageUrl}sodium-nitrite-1.jpg</image>
+			<image>${imageUrl}sodium-nitrite-2.jpg</image>
+		</images>
+
+		<description>
+			Nama Lain: Sodium Dichromate Anhydrous/Sodium Dichromate/Sodium Bichromate&lt;br&gt;
+
+			Kegunaan:&lt;br&gt;
+			&lt;ol&gt;
+				&lt;li&gt;Digunakan untuk mengawetkan daging seperti ham, bacon dan hotdog, dan akan memberikan daging yang diawetkan rasa dan warna yang khas&lt;/li&gt;
+				&lt;li&gt;Digunakan dalam dunia farmasi untuk menghambat pertumbuhan bakteri penyebab botulisme dan mencegah pembusukan&lt;/li&gt;
+			&lt;/ol&gt;
+		</description>
+	</product>
+
+	<product>
+		<id>27</id>
+		<name>Soda Ash Light</name>
+		<category>Carbonate</category>
+		<formula>Na2CO3</formula>
+		<application>Industrial</application>
+		<purity>99.2%</purity>
+		<brand>-</brand>
+		<origin>China</origin>
+		<package>Bag</package>
+		<weight>40</weight>
+		<color>Putih</color>
+		<appearance>Bubuk</appearance>
+		<price>0</price>
+		
+		<images>
+			<image>${imageUrl}soda-ash-light-1.jpg</image>
+			<image>${imageUrl}soda-ash-light-2.jpg</image>
+		</images>
+
+		<description>
+			Kegunaan:&lt;br&gt;
+			&lt;ol&gt;
+				&lt;li&gt;Digunakan dalam pabrik kaca untuk pembentukan kaca&lt;/li&gt;
+				&lt;li&gt;Digunakan dalam deterjen untuk pembilasan kain wool&lt;/li&gt;
+				&lt;li&gt;Digunakan dalam industri kertas untuk pencetakan dan pencelupan sebagai pelembut air&lt;/li&gt;
+				&lt;li&gt;Sebagai bahan penetralisir dan peningkat adonan, makanan, kue dan mie dan bahan makanan lainnya&lt;/li&gt;
+			&lt;/ol&gt;
+
+		</description>
+	</product>
+
+
 
 	
 

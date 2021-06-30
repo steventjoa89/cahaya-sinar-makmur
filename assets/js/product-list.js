@@ -854,12 +854,144 @@ var productList =
 				&lt;li&gt;Digunakan dalam industri kertas untuk pencetakan dan pencelupan sebagai pelembut air&lt;/li&gt;
 				&lt;li&gt;Sebagai bahan penetralisir dan peningkat adonan, makanan, kue dan mie dan bahan makanan lainnya&lt;/li&gt;
 			&lt;/ol&gt;
-
 		</description>
 	</product>
 
+	<product>
+		<id>28</id>
+		<name>Soda Ash Dense</name>
+		<category>Carbonate</category>
+		<formula>Na2CO3</formula>
+		<application>Industrial</application>
+		<purity>99.2%</purity>
+		<brand>-</brand>
+		<origin>China</origin>
+		<package>Bag</package>
+		<weight>50</weight>
+		<color>Putih</color>
+		<appearance>Kristal Halus</appearance>
+		<price>0</price>
+		
+		<images>
+			<image>${imageUrl}soda-ash-dense-1.jpg</image>
+			<image>${imageUrl}soda-ash-dense-2.jpg</image>
+		</images>
 
+		<description>
+			Kegunaan: Industri kaca, deterjen, percetakan dan pewarnaan tekstil dan bisa digunakan di dalam industri makanan.
+		</description>
+	</product>
 
+	<product>
+		<id>29</id>
+		<name>Hydrogen Peroxide</name>
+		<category>Hydrogen Peroxide</category>
+		<formula>H2O2</formula>
+		<application>Industrial</application>
+		<purity>19.9%</purity>
+		<brand>-</brand>
+		<origin>China</origin>
+		<package>Drum</package>
+		<weight>30</weight>
+		<color>Tidak Berwarna</color>
+		<appearance>Cairan</appearance>
+		<price>0</price>
+		
+		<images>
+			<image>${imageUrl}hydrogen-peroxide-1.jpg</image>
+		</images>
+
+		<description>
+			Kegunaan: untuk antiseptik ringan yang digunakan pada kulit untuk mencegah infeksi pada luka ringan, goresan, dan luka bakar. Kegunaan lain hidrogen peroxide adalah untuk sebagai obat kumur untuk membantu menghilangkan lendir atau untuk meredakan iritasi mulut ringan (misalnya, karena sariawan / sariawan, radang gusi).
+		</description>
+	</product>
+
+	<product>
+		<id>30</id>
+		<name>Potassium Dichromate</name>
+		<category>Uncategorized</category>
+		<formula>K2Cr2O7</formula>
+		<application>Industrial</application>
+		<purity>99%</purity>
+		<brand>-</brand>
+		<origin>China</origin>
+		<package>Bag</package>
+		<weight>25</weight>
+		<color>Merah</color>
+		<appearance>Bubuk</appearance>
+		<price>0</price>
+		
+		<images>
+			<image>${imageUrl}dotassium-dichromate-1.jpg</image>
+			<image>${imageUrl}dotassium-dichromate-2.jpg</image>
+		</images>
+
+		<description>
+			Properti Kimia: Kristal triklinik oranye, Non-Hidroskopik, larut dalam air dan alkohol, beracun, pengoksidasi kuat, mudah terbakar dalam gesekan atau tumbukan dengan senyawa organik.&lt;br&gt;&lt;br&gt;
+
+			Kegunaan: Digunakan dalam industri oksida krom, kalium kromat, pigmen kuning krom, pasif permukaan baja, pembuatan batang las, korek api, kalium sulfat kromat dan reagen kimia. Dan kadang digunakan sebagai oksidan.
+		</description>
+	</product>
+
+	<product>
+		<id>31</id>
+		<name>Iron Oxide Red 120</name>
+		<category>Uncategorized</category>
+		<formula>Fe2O3</formula>
+		<application>Industrial</application>
+		<purity>-</purity>
+		<brand>-</brand>
+		<origin>China</origin>
+		<package>Bag</package>
+		<weight>25</weight>
+		<color>Merah</color>
+		<appearance>Bubuk</appearance>
+		<price>0</price>
+		
+		<images>
+			<image>${imageUrl}iron-oxide-red-1.jpg</image>
+			<image>${imageUrl}iron-oxide-red-2.jpg</image>
+		</images>
+
+		<description>
+			Nama Lain: Red Iron Oxide Pigment, Red Oxide&lt;br&gt;
+
+			Kegunaan:&lt;br&gt;
+			&lt;ol&gt;
+				&lt;li&gt;Industri tinta&lt;/li&gt;
+				&lt;li&gt;Industri plastik&lt;/li&gt;
+				&lt;li&gt;Industri cat dan pelapisan cat&lt;/li&gt;
+				&lt;li&gt;Industri karet&lt;/li&gt;
+			&lt;/ol&gt;
+		</description>
+	</product>
+
+	<product>
+		<id>32</id>
+		<name>Potassium Hydroxide</name>
+		<category>Potassium Hydroxide</category>
+		<formula>KOH</formula>
+		<application>Industrial</application>
+		<purity>90%</purity>
+		<brand>-</brand>
+		<origin>China</origin>
+		<package>Bag</package>
+		<weight>25</weight>
+		<color>Putih</color>
+		<appearance>Flake/Serpihan</appearance>
+		<price>0</price>
+		
+		<images>
+			<image>${imageUrl}potassium-hydroxide-1.jpg</image>
+			<image>${imageUrl}potassium-hydroxide-2.jpg</image>
+		</images>
+
+		<description>
+			Nama Lain: Caustic Potash Flakes&lt;br&gt;
+
+			Kegunaan:digunakan dalam industri baterai alkaline, sabun, industri deterjen dan kosmetik kelas tinggi, zat obat-obatan, bahan kimia kalium, karet sintetis, resin ABS, zat warna aditif makanan dan lain sebagainya.
+		</description>
+	</product>
 	
 
 </product-list>

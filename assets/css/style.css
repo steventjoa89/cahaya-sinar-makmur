@@ -708,6 +708,19 @@ section {
   border-color: #2282ff;
 }
 
+/* Custom icon-box yellow */
+.services .icon-box-yellow .icon {
+  background: #fffbbd;
+}
+
+.services .icon-box-yellow .icon i {
+  color: #e6d919;
+}
+
+.services .icon-box-yellow:hover {
+  border-color: #e6d919;
+}
+
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/

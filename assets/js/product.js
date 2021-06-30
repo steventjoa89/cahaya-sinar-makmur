@@ -5,10 +5,12 @@ let parser = new DOMParser();
 let xmlDoc = parser.parseFromString(productList,"text/xml");
 
 // Column Setting
-let colSpan = 4;
+let colSpan = 3;
 
 // Product Sorting
 let productCount = xmlDoc.getElementsByTagName("product").length;
+// productCount = 8;
+console.log(productCount)
 let prodId = new Array(), prodName = new Array(), prodCategory = new Array(), prodImageUrl = new Array(), prodOrigin = new Array(), prodWeight = new Array();
 for(var i=0;i<productCount;i++){
 	// PRODUCT IMAGE

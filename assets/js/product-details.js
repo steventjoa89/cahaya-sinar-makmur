@@ -11,7 +11,7 @@ for(var i=0;i<productCount;i++){
 		for(var j=0;j<xmlDoc.getElementsByTagName("images")[i].getElementsByTagName("image").length;j++){
 			prodImage += `
 			<div class="swiper-slide">
-				<img src="${xmlDoc.getElementsByTagName("images")[i].getElementsByTagName("image")[j].childNodes[0].nodeValue}" alt="">
+				<img src="${xmlDoc.getElementsByTagName("images")[i].getElementsByTagName("image")[j].childNodes[0].nodeValue}" alt="${xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue}">
 			</div>
 			`
 		}

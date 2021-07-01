@@ -36,7 +36,7 @@ for(var i=0;i<productCount;i++){
 			let numWithThousandSep = (x) => {
 				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 			}
-
+			// TODO - Masih Salah Hitung
 			return numWithThousandSep(Math.ceil((prodUsdPrice * usdIdrRate * xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue)*(1+myRate)));
 		}
 		document.getElementById("product-price").innerHTML = "Rp " + getProdPrice(xmlDoc.getElementsByTagName("price")[i].childNodes[0].nodeValue);

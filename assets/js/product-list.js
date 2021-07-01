@@ -992,6 +992,67 @@ var productList =
 			Kegunaan:digunakan dalam industri baterai alkaline, sabun, industri deterjen dan kosmetik kelas tinggi, zat obat-obatan, bahan kimia kalium, karet sintetis, resin ABS, zat warna aditif makanan dan lain sebagainya.
 		</description>
 	</product>
+
+	<product>
+		<id>33</id>
+		<name>Phosphoric Acid</name>
+		<category>Acid</category>
+		<formula>H3PO4</formula>
+		<application>Industrial</application>
+		<purity>85%</purity>
+		<brand>-</brand>
+		<origin>China</origin>
+		<package>Drum</package>
+		<weight>35</weight>
+		<color>Transparan</color>
+		<appearance>Cairan</appearance>
+		<price>0</price>
+		
+		<images>
+			<image>${imageUrl}phosphoric-acid-1.jpg</image>
+		</images>
+
+		<description>
+			Kegunaan: Asam Fosfat dapat digunakan untuk memproduksi berbagai macam fosfat, cairan perawatan elektrolit atau cairan perawatan kimia, mortar tahan api dengan asam fosfat dan koheren anorganik. Asam fosfat juga digunakan sebagai katalis, zat pengering dan pembersih.&lt;br&gt;&lt;br&gt;
+
+			Dalam industri pelapisan asam fosfat digunakan sebagai pelapis tahan karat untuk logam;.&lt;br&gt;&lt;br&gt;
+
+			Dapat pula digunakan sebagai pengatur keasaman dan agen nutrisi untuk ragi food grade asam fosfat dapat diterapkan pada rasa, makanan kaleng dan minuman ringan serta digunakan dalam pembuatan bir anggur sebagai sumber nutrisi untuk ragi untuk mencegah reproduksi bakteri.
+		</description>
+	</product>
+
+	<product>
+		<id>34</id>
+		<name>Iron Oxide Blue</name>
+		<category>Uncategorized</category>
+		<formula>Fe2O3</formula>
+		<application>Industrial</application>
+		<purity>99%</purity>
+		<brand>-</brand>
+		<origin>China</origin>
+		<package>Bag</package>
+		<weight>25</weight>
+		<color>Merah</color>
+		<appearance>Bubuk</appearance>
+		<price>0</price>
+		
+		<images>
+			<image>${imageUrl}iron-oxide-blue-1.jpg</image>
+			<image>${imageUrl}iron-oxide-blue-2.jpg</image>
+		</images>
+
+		<description>
+			Nama Lain: Ultra Marine Blue&lt;br&gt;
+
+			Kegunaan:&lt;br&gt;
+			&lt;ol&gt;
+				&lt;li&gt;Industri beton dan produk bangunan&lt;/li&gt;
+				&lt;li&gt;Industri karet&lt;/li&gt;
+				&lt;li&gt;Pewarnaan produk plastik&lt;/li&gt;
+			&lt;/ol&gt;
+		</description>
+	</product>
+
 	
 
 </product-list>

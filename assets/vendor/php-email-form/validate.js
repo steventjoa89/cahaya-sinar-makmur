@@ -1,3 +1,8 @@
+/**
+* PHP Email Form Validation - v3.1
+* Author: Steven Tjoa Tanudjaja
+*/
+
 (function () {
   "use strict";
 
@@ -8,7 +13,7 @@
       event.preventDefault();
 
       let thisForm = this;
-      let name1= encodeURI("123@yahoo.com");
+      
       var action = thisForm.getAttribute('action');
       
       if( ! action ) {
@@ -20,15 +25,16 @@
       thisForm.querySelector('.sent-message').classList.remove('d-block');
 
       let formData = new FormData( thisForm );
-      action += `?name=${encodeURI(formData.get("name"))}&email=${encodeURI(formData.get("email"))}&subject=${encodeURI(formData.get("subject"))}&message=${encodeURI(formData.get("message"))}`;
 
-      jsp_email_form_submit(thisForm, action, formData);
+      php_email_form_submit(thisForm, action, formData);
     });
   });
 
-  function jsp_email_form_submit(thisForm, action, formData) {
+  function php_email_form_submit(thisForm, action, formData) {
     fetch(action, {
-      method: 'GET',
+      method: 'POST',
+      body: formData,
+      headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
     .then(response => {
       if( response.ok ) {
@@ -52,15 +58,9 @@
   }
 
   function displayError(thisForm, error) {
+    console.error(`Error! With error message: ${error}.`);
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
+    thisForm.querySelector('.error-message').innerHTML = "Error. Please try again later.";
     thisForm.querySelector('.error-message').classList.add('d-block');
   }
-
-  function displaySuccess(thisForm, error) {
-    thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.sent-message').innerHTML = error;
-    thisForm.querySelector('.sent-message').classList.add('d-block');
-  }
-
 })();

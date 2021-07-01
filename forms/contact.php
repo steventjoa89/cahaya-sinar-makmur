@@ -7,21 +7,21 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+  // $receiving_email_address = 'contact@example.com';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+  // if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
+  //   include( $php_email_form );
+  // } else {
+  //   die( 'Unable to load the "PHP Email Form" Library!');
+  // }
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
+  // $contact = new PHP_Email_Form;
+  // $contact->ajax = true;
   
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+  // $contact->to = $receiving_email_address;
+  // $contact->from_name = $_POST['name'];
+  // $contact->from_email = $_POST['email'];
+  // $contact->subject = $_POST['subject'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   /*
@@ -33,9 +33,43 @@
   );
   */
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+  // $contact->add_message( $_POST['name'], 'From');
+  // $contact->add_message( $_POST['email'], 'Email');
+  // $contact->add_message( $_POST['message'], 'Message', 10);
 
-  echo $contact->send();
+  // echo $contact->send();
+
+
+  /**
+   * Current PHP only record the file into TXT File based on the JSP File
+   */
+
+  try{
+    $message = "";
+
+    $message .= "=============== NEW REQUEST ===============\n";
+    $timezone  = 7;
+    $message .= "Date & Time: : " . gmdate("Y/m/d h:i:s A", time() + 3600*($timezone+date("I"))) . "\n";
+    $message .= "Name: " . $_POST['name'] . "\n";
+    $message .= "Email: " . $_POST["email"] . "\n";
+    $message .= "Subject: " . $_POST["subject"] . "\n";
+    $message .= "Message: " . $_POST["message"] . "\n";
+    $message .= "============ END OF NEW REQUEST ===========" . "\n\n";
+    writeToTextFile($message);
+
+    echo "OK";
+  }catch(Exception $e) {
+    echo 'Message: ' .$e->getMessage();
+  }
+
+  function writeToTextFile($message) {
+    try{
+      $fp = fopen('request-message.txt', 'a');//opens file in append mode  
+      fwrite($fp, $message);  
+      fclose($fp); 
+    }catch(Exception $e) {
+      echo 'Message: ' .$e->getMessage();
+    }
+  }
+
 ?>

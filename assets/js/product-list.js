@@ -1032,7 +1032,7 @@ var productList =
 		<origin>China</origin>
 		<package>Bag</package>
 		<weight>25</weight>
-		<color>Merah</color>
+		<color>Blue</color>
 		<appearance>Bubuk</appearance>
 		<price>0</price>
 		

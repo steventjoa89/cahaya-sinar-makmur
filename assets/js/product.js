@@ -9,10 +9,11 @@ let colSpan = 3;
 
 // Product Sorting
 let productCount = xmlDoc.getElementsByTagName("product").length;
-// productCount = 8;
-console.log(productCount)
 let prodId = new Array(), prodName = new Array(), prodCategory = new Array(), prodImageUrl = new Array(), prodOrigin = new Array(), prodWeight = new Array();
+// Loop for the products
 for(var i=0;i<productCount;i++){
+	if(xmlDoc.getElementsByTagName("id")[i].getAttribute("disabled") == "true") continue;
+
 	// PRODUCT IMAGE
 	prodImageUrl.push(xmlDoc.getElementsByTagName("images")[i].getElementsByTagName("image")[0].childNodes[0].nodeValue);
 
@@ -28,7 +29,7 @@ let newProdName = prodName.slice(); newProdName.sort();
 
 // Display Product
 const isSameProdName = (element) => element == newProdName[i];
-for(var i=0;i<productCount;i++){
+for(var i=0;i<prodId.length;i++){
 	let index = prodName.indexOf(newProdName[i]);
 
 	document.getElementById("product-list").innerHTML += `

@@ -1022,7 +1022,7 @@ var productList =
 	</product>
 
 	<product>
-		<id>34</id>
+		<id disabled="true">34</id>
 		<name>Iron Oxide Blue</name>
 		<category>Uncategorized</category>
 		<formula>Fe2O3</formula>

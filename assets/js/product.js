@@ -57,90 +57,15 @@ let getAllProductList = () => {
 
 getAllProductList();
 
+// TODO - - - 
+// Let Product Search
+// let forms = document.querySelectorAll('.product-search');
+// forms.forEach( function(e) {
+//     e.addEventListener('submit', function(event) {
+//       event.preventDefault();
 
-// let readXmlFile = (file) => {
-// 	fetch('assets/js/product-list.xml')
-//   .then(response => response.text())
-//   .then(data => {
-
-// 		// for(var i=0;i<2;i++){
-// 		// 	const div = document.createElement('div');
-// 		// 	div.className = "col-lg-3 col-md-3 portfolio-wrap filter-app";
-// 		// 	div.innerHTML = `
-// 		// 	<div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
-// 		// 		<div class="portfolio-item">
-// 		// 			<img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-// 		// 			<div class="portfolio-info">
-// 		// 				<h3>App 1</h3>
-// 		// 				<div>
-// 		// 					<a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-// 		// 					<a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-// 		// 				</div>
-// 		// 			</div>
-// 		// 		</div>
-// 		// 	</div>
-// 		// 	`;
-
-// 		// 	document.getElementById('product-list').appendChild(div);
-// 		// }
-
-// 		return 2;
-// 	})
-// 	.catch((error) => {
-// 		console.log(error)
-// 	});
-	
-// }
-
-// let xmlProductList = readXmlFile("product-list.xml");
-// console.log(xmlProductList)
-
-// for(var i=0;i<xmlProductList;i++){
-// 	const div = document.createElement('div');
-// 	div.className = "col-lg-3 col-md-3 portfolio-wrap filter-app";
-// 	div.innerHTML = `
-// 	<div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
-// 		<div class="portfolio-item">
-// 			<img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-// 			<div class="portfolio-info">
-// 				<h3>App 1</h3>
-// 				<div>
-// 					<a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-// 					<a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-// 				</div>
-// 			</div>
-// 		</div>
-// 	</div>
-// 	`;
-
-// 	document.getElementById('product-list').appendChild(div);
-// }
-
-
-// async function fetchText() {
-// 	let response = await fetch('assets/js/product-list.xml');
-// 	let data = await response.text();
-// 	console.log(data);
-
-	
-// }
-
-// fetchText();
-
-
-// for(var i=0;i<4;i++){
-// 	const div = document.createElement('div');
-// 	div.className = "col-lg-4 col-md-4 portfolio-wrap filter-app";
-// 	div.innerHTML = `<div class="portfolio-item">
-	
-// 	<div class="portfolio-info">
-// 		<h3>App 1</h3>
-// 		<div>
-// 			<a href="assets/img/products/backup/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-// 			<a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-// 		</div>
-// 	</div>
-// </div>`;
-
-// document.getElementById('product-list').appendChild(div);
-// }
+// 	  console.log("Hello World");
+// 	  // Set Filter to All
+// 	  // Set Custom Filter
+//     });
+//   });

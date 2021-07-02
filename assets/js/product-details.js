@@ -1,50 +1,44 @@
-let parser = new DOMParser();
-let xmlDoc = parser.parseFromString(productList,"text/xml");
-
-let productCount = xmlDoc.getElementsByTagName("product").length;
-let prodId = new URLSearchParams(window.location.search).get("id");
-
-for(var i=0;i<productCount;i++){
-	if(prodId == xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue){
-		// PRODUCT IMAGE
-		var prodImage = "";
-		for(var j=0;j<xmlDoc.getElementsByTagName("images")[i].getElementsByTagName("image").length;j++){
-			prodImage += `
-			<div class="swiper-slide">
-				<img src="${xmlDoc.getElementsByTagName("images")[i].getElementsByTagName("image")[j].childNodes[0].nodeValue}" alt="${xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue}">
-			</div>
-			`
-		}
-
-		document.getElementById("product-image").innerHTML = prodImage;
-
-		// PRODUCT INFORMATION
-		document.getElementById("product-name").innerHTML = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-		document.getElementById("product-category").innerHTML = xmlDoc.getElementsByTagName("category")[i].childNodes[0].nodeValue;
-		document.getElementById("product-formula").innerHTML = xmlDoc.getElementsByTagName("formula")[i].childNodes[0].nodeValue;
-		document.getElementById("product-application").innerHTML = xmlDoc.getElementsByTagName("application")[i].childNodes[0].nodeValue;
-		document.getElementById("product-purity").innerHTML = xmlDoc.getElementsByTagName("purity")[i].childNodes[0].nodeValue;
-		// document.getElementById("product-brand").innerHTML = xmlDoc.getElementsByTagName("brand")[i].childNodes[0].nodeValue;
-		document.getElementById("product-origin").innerHTML = xmlDoc.getElementsByTagName("origin")[i].childNodes[0].nodeValue;
-		document.getElementById("product-package").innerHTML = xmlDoc.getElementsByTagName("package")[i].childNodes[0].nodeValue;
-		document.getElementById("product-weight").innerHTML = xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue;
-		document.getElementById("product-color").innerHTML = xmlDoc.getElementsByTagName("color")[i].childNodes[0].nodeValue;
-		document.getElementById("product-appearance").innerHTML = xmlDoc.getElementsByTagName("appearance")[i].childNodes[0].nodeValue;
-
-		// PRICE
-		let getProdPrice = (prodUsdPrice) => {
-			let numWithThousandSep = (x) => {
-				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-			}
-			// TODO - Masih Salah Hitung
-			return numWithThousandSep(Math.ceil((prodUsdPrice * usdIdrRate * xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue)*(1+myRate)));
-		}
-		document.getElementById("product-price").innerHTML = "Rp " + getProdPrice(xmlDoc.getElementsByTagName("price")[i].childNodes[0].nodeValue);
-
-		// PRODUCT DESCRIPTION
-		console.log();
-		document.getElementById("product-description").innerHTML = xmlDoc.getElementsByTagName("description")[i].childNodes[0].nodeValue.trim();
-		break;
-	}
+function isProduct(product) {
+    return product.id == new URLSearchParams(window.location.search).get("id");
 }
 
+let setValue = (value) => {
+	const el = document.createElement('span');
+	el.innerHTML = value;
+	return el;
+}
+
+let setImageValue = (index, value, name) => {
+	console.log(`./assets/img/products/${value}`);
+	document.getElementById(`product-image-${index}`).src = `./assets/img/products/${value}`;
+	document.getElementById(`product-image-${index}`).alt = name;
+}
+
+let getProductDetail = () => {
+	let products = JSON.parse(jsonProductList).products.product;
+	let product = products.find(isProduct);
+
+	// Images - Set Value to 2
+	var index = 1;
+	for(const value of product.images.image){
+		setImageValue(index, value, product.name);
+		index++;
+	}
+
+	// Product Details
+	document.getElementById("product-name").appendChild(setValue(product.name));
+	document.getElementById("product-chem-formula").appendChild(setValue(product.formula));
+	document.getElementById("product-purity").appendChild(setValue(product.purity));
+	document.getElementById("product-category").appendChild(setValue(product.categories.category.sort().join(", ")));
+	document.getElementById("product-application").appendChild(setValue(product.applications.application.sort().join(", ")));
+	document.getElementById("product-country").appendChild(setValue(product.country));
+	document.getElementById("product-package").appendChild(setValue(product.package));
+	document.getElementById("product-content").appendChild(setValue(product.content));
+	document.getElementById("product-appearance").appendChild(setValue(product.appearance));
+	document.getElementById("product-color").appendChild(setValue(product.color));
+	document.getElementById("product-price").appendChild(setValue(product.price));
+	document.getElementById("product-description").appendChild(setValue(product.description));
+
+}
+
+getProductDetail();

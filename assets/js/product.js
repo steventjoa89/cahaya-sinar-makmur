@@ -1,81 +1,146 @@
-// IMPORTANT NOTE
-// IMAGE SIZE SHOULD BE 800 x 600
-
-let parser = new DOMParser();
-let xmlDoc = parser.parseFromString(productList,"text/xml");
-
-// Column Setting
-let colSpan = 3;
-
-// Product Sorting
-let productCount = xmlDoc.getElementsByTagName("product").length;
-let prodId = new Array(), prodName = new Array(), prodCategory = new Array(), prodImageUrl = new Array(), prodOrigin = new Array(), prodWeight = new Array();
-// Loop for the products
-for(var i=0;i<productCount;i++){
-	if(xmlDoc.getElementsByTagName("id")[i].getAttribute("disabled") == "true") continue;
-
-	// PRODUCT IMAGE
-	prodImageUrl.push(xmlDoc.getElementsByTagName("images")[i].getElementsByTagName("image")[0].childNodes[0].nodeValue);
-
-	// PRODUCT DETAILS
-	prodId.push(xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue);
-	prodName.push(xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue);
-	prodCategory.push(xmlDoc.getElementsByTagName("category")[i].childNodes[0].nodeValue);
-	prodOrigin.push(xmlDoc.getElementsByTagName("origin")[i].childNodes[0].nodeValue);
-	prodWeight.push(xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue);
+function onlyUnique(value, index, self) {
+	return self.indexOf(value) === index;
 }
-// End of Product Sorting
-let newProdName = prodName.slice(); newProdName.sort();
 
-// Display Product
-const isSameProdName = (element) => element == newProdName[i];
-for(var i=0;i<prodId.length;i++){
-	let index = prodName.indexOf(newProdName[i]);
+let countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0);
 
-	document.getElementById("product-list").innerHTML += `
-	<div class="col-lg-${colSpan} col-md-6 portfolio-wrap filter-${prodCategory[index].replace(" ", "-").toLowerCase()}">
-		<h4 class="title" style="text-align: center;">${newProdName[i]}</h4>
+let getAllProductList = () => {
+	let products = JSON.parse(jsonProductList).products.product;
+	
+
+	// Get Total Products
+	let totalProductsCount = products.length;
+	document.getElementById("total-product-categories-count").innerHTML = totalProductsCount;
+
+	// Get All Products Categories
+	var productCategories = new Array();
+	products.forEach(function (product) {
+		product.categories.category.forEach(function(category){
+			productCategories.push(category);
+		})		
+	});
+
+	// Get Unique Product Category Array
+	var productCategoryUnique = productCategories.filter(onlyUnique);
+	productCategoryUnique.sort();
+
+	// Printing Product Categories
+	for(const value of productCategoryUnique){
+		const div = document.createElement('div');
+		div.innerHTML = `<li data-filter=".filter-${value.toLowerCase()}" style="margin: 0px; padding: 0 3px 5px 0; font-weight: 200;">${value} </li><small style="color: #aaaaaa;">(${countOccurrences(productCategories, value)})</small><br>`;
+		document.getElementById("product-filter").appendChild(div);
+	}
+
+	// Printing All Products
+	for(const product of products){
+		const div = document.createElement('div');
+		var prodCategories = new Array();
+		for(const category of product.categories.category){
+			prodCategories.push("filter-"+category.toLowerCase());
+		}
+		div.className = "col-lg-4 col-md-6 portfolio-wrap "+prodCategories.join(" ");
+		div.innerHTML = `
+		<span><center>${product.name}</center></span>
 		<div class="portfolio-item">
-			<img src="`+prodImageUrl[index]+`" class="img-fluid" alt="${newProdName[i]}">
+			<img src="assets/img/products/${product.images.image[0]}" class="img-fluid" alt="${product.name}">
 			<div class="portfolio-info">
-				<h3>${prodOrigin[i]}<br>${prodWeight[index]} KG</h3>
-				<div><a href="product-details.html?id=${prodId[index]}" title="${newProdName[i]} Details"><i class="bx bx-detail"></i></a></div>
+				<h3>${product.name}</h3>
+				<div>
+					<a href="product-details.html?id=${product.id}" title="Portfolio Details"><i class="bx bx-search"></i></a>
+				</div>
 			</div>
 		</div>
-	</div>
-	`;
-}
-// End of display product
-
-// Product Filter
-var productCategory = new Array();
-for(var i=0;i<xmlDoc.getElementsByTagName("category").length;i++){
-	productCategory.push(xmlDoc.getElementsByTagName("category")[i].childNodes[0].nodeValue.trim().toLowerCase());
+		`;
+		document.getElementById('product-list').appendChild(div);
+	}
 }
 
-// Get Unique Array
-function onlyUnique(value, index, self) {
-  return self.indexOf(value) === index;
-}
-var productCategoryUnique = productCategory.filter(onlyUnique);
-productCategoryUnique.sort();
+getAllProductList();
 
-let titleCase = (str) => {
-	str = str.toLowerCase().split(' ');
-  for (var i = 0; i < str.length; i++) {
-    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
-  }
-  return str.join(' ');
-}
-var productFilter = "";
-for(var i=0;i<productCategoryUnique.length;i++){
-	productFilter += `<li data-filter=".filter-${productCategoryUnique[i].replace(" ", "-").toLowerCase()}">${titleCase(productCategoryUnique[i])}</li>`;
-}
 
-document.getElementById("product-filter").innerHTML = 
-`
-<ul id="portfolio-flters">
-	<li data-filter="*" class="filter-active">All</li>
-	${productFilter}
-</ul>
-`;
+// let readXmlFile = (file) => {
+// 	fetch('assets/js/product-list.xml')
+//   .then(response => response.text())
+//   .then(data => {
+
+// 		// for(var i=0;i<2;i++){
+// 		// 	const div = document.createElement('div');
+// 		// 	div.className = "col-lg-3 col-md-3 portfolio-wrap filter-app";
+// 		// 	div.innerHTML = `
+// 		// 	<div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+// 		// 		<div class="portfolio-item">
+// 		// 			<img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+// 		// 			<div class="portfolio-info">
+// 		// 				<h3>App 1</h3>
+// 		// 				<div>
+// 		// 					<a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+// 		// 					<a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+// 		// 				</div>
+// 		// 			</div>
+// 		// 		</div>
+// 		// 	</div>
+// 		// 	`;
+
+// 		// 	document.getElementById('product-list').appendChild(div);
+// 		// }
+
+// 		return 2;
+// 	})
+// 	.catch((error) => {
+// 		console.log(error)
+// 	});
+	
+// }
+
+// let xmlProductList = readXmlFile("product-list.xml");
+// console.log(xmlProductList)
+
+// for(var i=0;i<xmlProductList;i++){
+// 	const div = document.createElement('div');
+// 	div.className = "col-lg-3 col-md-3 portfolio-wrap filter-app";
+// 	div.innerHTML = `
+// 	<div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+// 		<div class="portfolio-item">
+// 			<img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+// 			<div class="portfolio-info">
+// 				<h3>App 1</h3>
+// 				<div>
+// 					<a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+// 					<a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	</div>
+// 	`;
+
+// 	document.getElementById('product-list').appendChild(div);
+// }
+
+
+// async function fetchText() {
+// 	let response = await fetch('assets/js/product-list.xml');
+// 	let data = await response.text();
+// 	console.log(data);
+
+	
+// }
+
+// fetchText();
+
+
+// for(var i=0;i<4;i++){
+// 	const div = document.createElement('div');
+// 	div.className = "col-lg-4 col-md-4 portfolio-wrap filter-app";
+// 	div.innerHTML = `<div class="portfolio-item">
+	
+// 	<div class="portfolio-info">
+// 		<h3>App 1</h3>
+// 		<div>
+// 			<a href="assets/img/products/backup/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+// 			<a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+// 		</div>
+// 	</div>
+// </div>`;
+
+// document.getElementById('product-list').appendChild(div);
+// }

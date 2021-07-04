@@ -9,7 +9,7 @@ let setValue = (value) => {
 }
 
 let setImageValue = (index, value, name) => {
-	console.log(`./assets/img/products/${value}`);
+	// console.log(`./assets/img/products/${value}`);
 	document.getElementById(`product-image-${index}`).src = `./assets/img/products/${value}`;
 	document.getElementById(`product-image-${index}`).alt = name;
 }
@@ -36,15 +36,14 @@ let getProductDetail = () => {
 	document.getElementById("product-chem-formula").appendChild(setValue(product.formula));
 	document.getElementById("product-country").appendChild(setValue(product.country));
 	document.getElementById("product-brand").appendChild(setValue(product.brand));
-	document.getElementById("product-package").appendChild(setValue(product.package));
-	document.getElementById("product-content").appendChild(setValue(product.content));
+	document.getElementById("product-package").appendChild(setValue(product.package+` (${product.content} Kg)`));
 	
 	document.getElementById("product-grade").appendChild(setValue(product.grades.grade.sort().join(", ")));
 	document.getElementById("product-appearance").appendChild(setValue(product.appearance));
 	document.getElementById("product-color").appendChild(setValue(product.color));
 
 	document.getElementById("product-moq").appendChild(setValue("1 "+product.package));
-	document.getElementById("product-price").appendChild(setValue("Rp "+numWithThousandSep(product.price)+"/"+product.package));
+	// document.getElementById("product-price").appendChild(setValue("Rp "+numWithThousandSep(product.price)+"/"+product.package));
 	
 	document.getElementById("product-description").appendChild(setValue(product.description));
 }

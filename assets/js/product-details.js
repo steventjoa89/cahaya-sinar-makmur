@@ -25,20 +25,28 @@ let getProductDetail = () => {
 		index++;
 	}
 
+	let numWithThousandSep = (x) => {
+		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+	}
+
 	// Product Details
 	document.getElementById("product-name").appendChild(setValue(product.name));
-	document.getElementById("product-chem-formula").appendChild(setValue(product.formula));
-	document.getElementById("product-purity").appendChild(setValue(product.purity));
 	document.getElementById("product-category").appendChild(setValue(product.categories.category.sort().join(", ")));
-	document.getElementById("product-application").appendChild(setValue(product.applications.application.sort().join(", ")));
+	document.getElementById("product-purity").appendChild(setValue(product.purity));
+	document.getElementById("product-chem-formula").appendChild(setValue(product.formula));
 	document.getElementById("product-country").appendChild(setValue(product.country));
+	document.getElementById("product-brand").appendChild(setValue(product.brand));
 	document.getElementById("product-package").appendChild(setValue(product.package));
 	document.getElementById("product-content").appendChild(setValue(product.content));
+	
+	document.getElementById("product-grade").appendChild(setValue(product.grades.grade.sort().join(", ")));
 	document.getElementById("product-appearance").appendChild(setValue(product.appearance));
 	document.getElementById("product-color").appendChild(setValue(product.color));
-	document.getElementById("product-price").appendChild(setValue(product.price));
-	document.getElementById("product-description").appendChild(setValue(product.description));
 
+	document.getElementById("product-moq").appendChild(setValue("1 "+product.package));
+	document.getElementById("product-price").appendChild(setValue("Rp "+numWithThousandSep(product.price)+"/"+product.package));
+	
+	document.getElementById("product-description").appendChild(setValue(product.description));
 }
 
 getProductDetail();

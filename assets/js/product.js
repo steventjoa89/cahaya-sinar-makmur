@@ -33,10 +33,10 @@ let getAllProductList = () => {
 	// }
 
 	// Count Food Category
-	document.getElementById("total-product-category-food").innerHTML = countOccurrences(productCategories, "food");
+	// document.getElementById("total-product-category-food").innerHTML = countOccurrences(productCategories, "food");
 	document.getElementById("total-product-category-industrial").innerHTML = countOccurrences(productCategories, "industrial");
-	document.getElementById("total-product-category-solvent").innerHTML = countOccurrences(productCategories, "solvent");
-	document.getElementById("total-product-category-uncategorized").innerHTML = countOccurrences(productCategories, "uncategorized");
+	// document.getElementById("total-product-category-solvent").innerHTML = countOccurrences(productCategories, "solvent");
+	// document.getElementById("total-product-category-uncategorized").innerHTML = countOccurrences(productCategories, "uncategorized");
 
 
 	// Printing All Products

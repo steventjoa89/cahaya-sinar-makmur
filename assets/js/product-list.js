@@ -1,1 +1,9 @@
-let jsonProductList = `{ "products": { "product": [{"id": 1,"name": "Trisodium Phosphate","categories": {"category": ["Food", "Industrial"]},"formula": "Na3PO4","applications": {"application": ["Industrial"]},"purity": "98%","brand": "-","country": "China","package": "Bag","content": "25 Kg","color": "White","appearance": "Bubuk Putih","price": 0.4,"images": {"image": ["trisodium-phosphate-1.jpg","trisodium-phosphate-2.jpg"]},"description": 12345},{"id": 2,"name": "Sodium Thiosulphate","categories": {"category": ["Phosphate","Sulphate"]},"formula": "Na2S2O3.5H2O","applications": {"application": ["plating","leather","sulfur dye"]},"purity": "99%","brand": "-","country": "China","package": "Bag","content": 25,"color": "Putih","appearance": "Kristal Transparan","price": 0.52,"images": {"image": ["sodium-thiosulphate-1.jpg","sodium-thiosulphate-2.jpg"]},"description": 1234},{"id": 3,"name": "Sodium Bicarbonate","categories": {"category": ["Phosphate","Sulphate","Food"]},"formula": "NAHCO3","applications": {"application": ["Food","Detergent"]},"purity": "99%","brand": "Malan","country": "China","package": "Bag","content": "25 Kg","color": "White","appearance": "Bubuk","price": 0.32,"images": {"image": ["sodium-bicarbonate-malan-1.jpg"]},"description": "Hello<b>Bod</b>"} ] } }`;
+let jsonProductList = `
+{
+  "products": {
+    "product": [
+		{"id": 1,"name": "Trisodium Phosphate/TSP","categories": {"category": ["Industrial"]},"purity": "98% Min","formula": "Na3PO4","country": "China","brand": "-","package": "Bag","content": "25","grades": {"grade": ["Technical"]},"appearance": "Powder","color": "White","description": "Trisodium phosphate (TSP) is the inorganic compound with the chemical formula Na3PO4. It is a white, granular or crystalline solid, highly soluble in water, producing an alkaline solution. TSP is used as a cleaning agent, builder, lubricant, food additive, stain remover, and degreaser.","images": { "image": [ "trisodium-phosphate-1.jpg", "trisodium-phosphate-2.jpg"]}}
+    ]
+  }
+}
+`;

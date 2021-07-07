@@ -43,8 +43,25 @@ let getProductDetail = () => {
 	document.getElementById("product-color").appendChild(setValue(product.color));
 
 	document.getElementById("product-moq").appendChild(setValue("1 "+product.package));
-	// document.getElementById("product-price").appendChild(setValue("Rp "+numWithThousandSep(product.price)+"/"+product.package));
+
 	
+	var setPrice = (hideShow) => {
+		if(hideShow){
+			// check if price exists in json
+			if(product["priceFrom"] && product["priceTo"]){		// Ada harga from to
+				displayPrice(numWithThousandSep(`Rp ${product.priceFrom} - ${product.priceTo} / Package`));
+			}else if(product["priceFrom"]){		// cman ada from
+				displayPrice(numWithThousandSep(`<i>from</i> Rp ${product.priceFrom} / Package`));
+			}
+
+			function displayPrice(price){
+				document.getElementById("product-price").appendChild(setValue(price));
+				document.getElementById("li-product-price").style.display  ='block'
+			}
+		}
+	}
+	setPrice(false);							// Hide or Show Product Price
+
 	document.getElementById("product-description").appendChild(setValue(product.description));
 }
 

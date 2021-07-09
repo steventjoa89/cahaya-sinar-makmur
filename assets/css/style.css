@@ -27,6 +27,14 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Roboto", sans-serif;
 }
 
+#company-glance{
+  text-align: center;
+}
+
+#our-purpose-glance {
+  text-align: right;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -385,6 +393,10 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
   color: #fff;
+}
+
+#hero #welcome-message{
+  font-size: 34px;
 }
 
 #hero .carousel-control-prev, #hero .carousel-control-next {
@@ -1283,7 +1295,7 @@ section {
   padding: 0;
   margin: 0 0 35px 0;
   list-style: none;
-  text-align: center;
+  text-align: left;
 }
 
 .portfolio #portfolio-flters li {
@@ -1303,6 +1315,16 @@ section {
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   border-color: #68A4C4;
   color: #68A4C4;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.product-category {
+  margin: 0px;
+  padding: 0 3px 5px 0;
+  font-weight: 200;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters .product-category-count{
+  color: #aaaaaa;
 }
 
 .portfolio .portfolio-item {
@@ -1399,6 +1421,20 @@ section {
   list-style: none;
   padding: 0;
   font-size: 15px;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.portfolio-details .portfolio-info ul #li-product-price{
+  display: none;
+}
+
+.portfolio-details .portfolio-info ul #li-product-description{
+  text-align: justify;
+}
+
+.portfolio-details .portfolio-info ul #li-product-description #product-description{
+  line-height: 1.5;
 }
 
 .portfolio-details .portfolio-info ul li + li {
@@ -2115,6 +2151,11 @@ section {
   font-style: italic;
   font-size: 14px;
   color: #aaaaaa;
+}
+
+.blog .sidebar .recent-posts .download-list{
+  margin-left: 2px;
+  font-weight: normal;
 }
 
 .blog .sidebar .tags {

@@ -49,12 +49,12 @@ let displayProduct = (category) => {
 
 let displayProductCategoryHtml = (productCategory, isShowAll = true) => {
 	let productCategoryHtml = '';
-	if(isShowAll) productCategoryHtml += `<li data-filter="*" class="filter-active" style="margin: 0px; padding: 0 3px 5px 0; font-weight: 200;">All </li><small style="color: #aaaaaa;">(${products.length})<br>`;
+	if(isShowAll) productCategoryHtml += `<li data-filter="*" class="filter-active product-category">All </li><small class="product-category-count">(${products.length})<br>`;
 
 	let displayFilterActive = !isShowAll ? `class="filter-active"` : ``;
 	
 	for(const category of productCategory){
-		productCategoryHtml += `<li id="category-food" data-filter=".filter-${category.toLowerCase()}" ${displayFilterActive} style="margin: 0px; padding: 0 3px 5px 0; font-weight: 200;">${category} </li><small style="color: #aaaaaa;">(${countOccurrences(allProductCategories, category.toLowerCase())})</small><br>`;
+		productCategoryHtml += `<li id="category-food" class="product-category" data-filter=".filter-${category.toLowerCase()}" ${displayFilterActive}>${category} </li><small class="product-category-count">(${countOccurrences(allProductCategories, category.toLowerCase())})</small><br>`;
 	}
 	document.getElementById("product-filter").innerHTML = productCategoryHtml;
 }

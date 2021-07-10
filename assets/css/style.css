@@ -1429,6 +1429,10 @@ section {
   display: none;
 }
 
+#sidebar-usage{
+  display: none;
+}
+
 .portfolio-details .portfolio-info ul #li-product-description{
   text-align: justify;
 }

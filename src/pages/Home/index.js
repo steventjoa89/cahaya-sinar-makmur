@@ -5,6 +5,7 @@ import Hero from "../../components/Hero";
 import Clients from "../../components/Clients";
 import AboutUs from "../../components/AboutUs";
 import WhyUs from "../../components/WhyUs";
+import Services from "../../components/Services";
 
 function HomePage() {
   return (
@@ -15,6 +16,7 @@ function HomePage() {
         <Clients />
         <AboutUs />
         <WhyUs />
+        <Services />
       </div>
       <Footer />
     </>

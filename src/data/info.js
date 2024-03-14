@@ -1,3 +1,6 @@
+import { IoIosGlobe } from "react-icons/io";
+import { MdDirectionsBike } from "react-icons/md";
+
 export const COMPANY_NAME = "Cahaya Sinar Makmur";
 export const COMPANY_ADDRESS = "Jl. Pejagalan Raya No. 85";
 export const COMPANY_ADDRESS_2 = "Jakarta";
@@ -41,6 +44,30 @@ export const WHY_US_POINTS = [
     question: "Non consectetur a erat nam at lectus urna duis?",
     answer:
       "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
+  },
+];
+
+export const SERVICES_DESCRIPTION = "This is services description.";
+export const SERVICES_ITEMS = [
+  {
+    icon: <IoIosGlobe />,
+    title: "item 1",
+    description: "aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa",
+  },
+  {
+    icon: <MdDirectionsBike />,
+    title: "item 2",
+    description: "bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb",
+  },
+  {
+    icon: <IoIosGlobe />,
+    title: "item 3",
+    description: "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc",
+  },
+  {
+    icon: <MdDirectionsBike />,
+    title: "item 4",
+    description: "ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd",
   },
 ];
 

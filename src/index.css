@@ -852,7 +852,7 @@ section {
   margin-bottom: 10px;
 }
 
-.services .icon-box .icon i {
+.services .icon-box .icon .icon-service {
   color: #47b2e4;
   font-size: 36px;
   transition: 0.3s;

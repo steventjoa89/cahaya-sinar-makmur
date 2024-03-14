@@ -1,100 +1,66 @@
-import React from "react";
-// import { COMPANY_NAME } from "../data/info";
+import React, { useEffect, useState } from "react";
+import { COMPANY_NAME } from "../data/info";
+import { MdMenu } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function Header() {
-  return (
-    <header id="header" className="fixed-top ">
-      {/* <div className="container d-flex align-items-center">
-        <h1 className="logo me-auto">
-          <a href="index.html">{COMPANY_NAME}</a>
-        </h1>
-        <a href="index.html" className="logo me-auto">
-          <img src="assets/img/logo.png" alt="" className="img-fluid" />
-        </a>
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
-        <nav id="navbar" className="navbar">
+  // Toggle .header-scrolled class to #header when page is scrolled
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if document is scrolled (i.e., scroll position is greater than 0)
+      const scrolled = window.scrollY > 100;
+      setIsScrolled(scrolled);
+    };
+
+    // Add scroll event listener when component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up: Remove event listener when component unmounts
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const toggleMobileNav = () => setIsMobileNavOpen(!isMobileNavOpen);
+
+  return (
+    <header
+      id="header"
+      className={`fixed-top ${isScrolled && "header-scrolled"}`}
+    >
+      <div className="container d-flex align-items-center">
+        <h1 className="logo me-auto">
+          <Link to="/">{COMPANY_NAME}</Link>
+        </h1>
+
+        <nav
+          id="navbar"
+          className={`navbar ${
+            isMobileNavOpen && "navbar-mobile bi-list bi-x"
+          }`}
+        >
           <ul>
             <li>
-              <a className="nav-link scrollto active" href="#hero">
+              <Link to="#hero" className="nav-link scrollto active">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#about">
+              <Link to="#about" className="nav-link scrollto">
                 About
-              </a>
-            </li>
-            <li>
-              <a className="nav-link scrollto" href="#services">
-                Services
-              </a>
-            </li>
-            <li>
-              <a className="nav-link   scrollto" href="#portfolio">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a className="nav-link scrollto" href="#team">
-                Team
-              </a>
-            </li>
-            <li className="dropdown">
-              <a href="#">
-                <span>Drop Down</span> <i className="bi bi-chevron-down"></i>
-              </a>
-              <ul>
-                <li>
-                  <a href="#">Drop Down 1</a>
-                </li>
-                <li className="dropdown">
-                  <a href="#">
-                    <span>Deep Drop Down</span>{" "}
-                    <i className="bi bi-chevron-right"></i>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#">Deep Drop Down 1</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Drop Down 2</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Drop Down 3</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Drop Down 4</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Drop Down 5</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Drop Down 2</a>
-                </li>
-                <li>
-                  <a href="#">Drop Down 3</a>
-                </li>
-                <li>
-                  <a href="#">Drop Down 4</a>
-                </li>
-              </ul>
+              </Link>
             </li>
             <li>
               <a className="nav-link scrollto" href="#contact">
                 Contact
               </a>
             </li>
-            <li>
-              <a className="getstarted scrollto" href="#about">
-                Get Started
-              </a>
-            </li>
           </ul>
-          <i className="bi bi-list mobile-nav-toggle"></i>
+          {/* <i className="bi bi-list mobile-nav-toggle"></i> */}
+          <MdMenu className="mobile-nav-toggle" onClick={toggleMobileNav} />
         </nav>
-      </div> */}
+      </div>
     </header>
   );
 }

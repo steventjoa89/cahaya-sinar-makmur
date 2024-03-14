@@ -8,6 +8,27 @@ function HomePage() {
     <>
       <Header />
       <Hero />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
+      1<br />
       <Footer />
     </>
   );

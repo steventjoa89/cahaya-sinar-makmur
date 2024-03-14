@@ -13,7 +13,8 @@ function Hero() {
           >
             <h1>Better Chemical Supplier For Your Business</h1>
             <h2>
-              We are a company that fulfill all of your business chemical needs.
+              We provide comprehensive solutions for all your business's
+              chemical requirements.
             </h2>
             {/* col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 aos-init aos-animate */}
             <div className="d-flex justify-content-center">

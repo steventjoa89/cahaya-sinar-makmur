@@ -19,8 +19,8 @@ function HomePage() {
         <AboutUs />
         <WhyUs />
         <Services />
-        <Cta />
         <Products />
+        <Cta />
         <Faq />
       </div>
       <Footer />

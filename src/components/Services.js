@@ -1,5 +1,5 @@
 import React from "react";
-import { PRODUCTS, SERVICES_ITEMS } from "../data/data";
+import { SERVICES_ITEMS } from "../data/data";
 
 function Services() {
   const splitPoint = 4;

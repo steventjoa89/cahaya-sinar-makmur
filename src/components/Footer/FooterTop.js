@@ -17,7 +17,7 @@ function FooterTop() {
     <div className="footer-top">
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 col-md-6 footer-contact">
+          <div className="col-lg-5 col-md-6 footer-contact">
             <h3>{COMPANY_NAME}</h3>
             <p>
               {COMPANY_ADDRESS} <br />
@@ -32,7 +32,7 @@ function FooterTop() {
             </p>
           </div>
 
-          <div className="col-lg-3 col-md-6 footer-links">
+          <div className="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               {USEFUL_LINKS.map((link, i) => (
@@ -44,7 +44,7 @@ function FooterTop() {
             </ul>
           </div>
 
-          <div className="col-lg-3 col-md-6 footer-links">
+          <div className="col-lg-2 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
               {OUR_SERVICES.map((link, i) => (

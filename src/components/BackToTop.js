@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { scrollToTop } from "../utils/scrollUtil";
 
 function BackToTop() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,13 +16,6 @@ function BackToTop() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <Link

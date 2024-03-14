@@ -71,6 +71,46 @@ export const SERVICES_ITEMS = [
   },
 ];
 
+export const TOTAL_PRODUCTS_OVERVIEW = 5;
+export const PRODUCTS = [
+  {
+    id: 1,
+    name: "Product 1",
+    category: ["a"],
+    image: "/images/products/portfolio-1.jpg",
+  },
+  {
+    id: 2,
+    name: "Product 2",
+    category: ["a", "b"],
+    image: "/images/products/portfolio-2.jpg",
+  },
+  {
+    id: 3,
+    name: "Product 3",
+    category: ["a"],
+    image: "/images/products/portfolio-3.jpg",
+  },
+  {
+    id: 4,
+    name: "Product 4",
+    category: ["a"],
+    image: "/images/products/portfolio-4.jpg",
+  },
+  {
+    id: 5,
+    name: "Product 5",
+    category: ["c"],
+    image: "/images/products/portfolio-5.jpg",
+  },
+  {
+    id: 6,
+    name: "Product 6",
+    category: ["c"],
+    image: "/images/products/portfolio-6.jpg",
+  },
+];
+
 export const FAQS = [
   {
     question: "Non consectetur a erat nam at lectus urna duis?",

@@ -7,6 +7,7 @@ import AboutUs from "../../components/AboutUs";
 import WhyUs from "../../components/WhyUs";
 import Services from "../../components/Services";
 import Faq from "../../components/Faq";
+import Products from "../../components/Products";
 
 function HomePage() {
   return (
@@ -18,6 +19,7 @@ function HomePage() {
         <AboutUs />
         <WhyUs />
         <Services />
+        <Products />
         <Faq />
       </div>
       <Footer />

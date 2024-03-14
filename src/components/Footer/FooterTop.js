@@ -8,7 +8,7 @@ import {
   COMPANY_PHONE,
   OUR_SERVICES,
   USEFUL_LINKS,
-} from "../../data/info";
+} from "../../data/data";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 

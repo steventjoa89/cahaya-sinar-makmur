@@ -4,7 +4,7 @@ import {
   WHY_US_POINTS,
   WHY_US_TITLE,
   WHY_US_TITLE_STRONG,
-} from "../data/info";
+} from "../data/data";
 import { Link } from "react-router-dom";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { addLeadingZero } from "../utils/mathUtil";

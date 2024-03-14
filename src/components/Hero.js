@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { scrollToElement } from "../utils/customUtil";
 
 function Hero() {
   return (
@@ -16,11 +16,15 @@ function Hero() {
               We provide comprehensive solutions for all your business's
               chemical requirements.
             </h2>
-            {/* col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 aos-init aos-animate */}
             <div className="d-flex justify-content-center">
-              <Link to="#about" className="btn-get-started scrollto">
+              <div
+                to="#about"
+                className="btn-get-started scrollto"
+                onClick={() => scrollToElement("about")}
+                style={{ cursor: "pointer" }}
+              >
                 About Us
-              </Link>
+              </div>
             </div>
           </div>
           <div

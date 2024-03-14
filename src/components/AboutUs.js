@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ABOUT_US_HOME } from "../data/info";
+import { ABOUT_US_HOME } from "../data/data";
 
 function AboutUs() {
   return (

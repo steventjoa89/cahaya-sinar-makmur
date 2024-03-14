@@ -1807,7 +1807,7 @@ section {
 }
 
 #footer .copyright {
-  float: left;
+  float: center;
 }
 
 #footer .credits {

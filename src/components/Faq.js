@@ -1,6 +1,6 @@
 import React from "react";
 import { IoMdHelpCircleOutline } from "react-icons/io";
-import { FAQS } from "../data/info";
+import { FAQS } from "../data/data";
 import { Link } from "react-router-dom";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 

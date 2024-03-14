@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PRODUCTS, TOTAL_PRODUCTS_OVERVIEW } from "../data/info";
+import { PRODUCTS, TOTAL_PRODUCTS_OVERVIEW } from "../data/data";
 import { getUniqueProductCategories, toProperCase } from "../utils/stringUtil";
 import { getRandomObjectFromObjectArray } from "../utils/mathUtil";
 

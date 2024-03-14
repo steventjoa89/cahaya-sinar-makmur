@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { COMPANY_NAME } from "../data/info";
+import { COMPANY_NAME } from "../data/data";
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -43,13 +43,13 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link to="#products" className="nav-link scrollto">
-                Products
+              <Link to="#about" className="nav-link scrollto">
+                About Us
               </Link>
             </li>
             <li>
-              <Link to="#about" className="nav-link scrollto">
-                About Us
+              <Link to="#products" className="nav-link scrollto">
+                Products
               </Link>
             </li>
             <li>

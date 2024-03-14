@@ -1346,6 +1346,7 @@ section {
   background: #fff;
   border-radius: 4px;
   position: relative;
+  text-align: left;
 }
 
 .faq .faq-list a {
@@ -1370,7 +1371,7 @@ section {
 
 .faq .faq-list .icon-show,
 .faq .faq-list .icon-close {
-  font-size: 24px;
+  font-size: 14px;
   position: absolute;
   right: 0;
   top: 0;

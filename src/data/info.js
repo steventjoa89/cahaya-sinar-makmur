@@ -71,6 +71,24 @@ export const SERVICES_ITEMS = [
   },
 ];
 
+export const FAQS = [
+  {
+    question: "Non consectetur a erat nam at lectus urna duis?",
+    answer:
+      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
+  },
+  {
+    question: "Non consectetur a erat nam at lectus urna duis?",
+    answer:
+      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
+  },
+  {
+    question: "Non consectetur a erat nam at lectus urna duis?",
+    answer:
+      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
+  },
+];
+
 export const USEFUL_LINKS = [
   { name: "Home", link: "/" },
   { name: "About Us", link: "/about-us" },

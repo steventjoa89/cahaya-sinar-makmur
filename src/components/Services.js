@@ -13,6 +13,7 @@ function Services() {
         <div className="row">
           {SERVICES_ITEMS.map((service, i) => (
             <div
+              key={i}
               className="col-xl-3 col-md-6 d-flex align-items-stretch"
               data-aos="zoom-in"
               data-aos-delay="100"

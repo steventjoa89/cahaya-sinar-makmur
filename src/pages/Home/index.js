@@ -6,6 +6,7 @@ import Clients from "../../components/Clients";
 import AboutUs from "../../components/AboutUs";
 import WhyUs from "../../components/WhyUs";
 import Services from "../../components/Services";
+import Faq from "../../components/Faq";
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
         <AboutUs />
         <WhyUs />
         <Services />
+        <Faq />
       </div>
       <Footer />
     </>

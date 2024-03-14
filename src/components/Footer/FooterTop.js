@@ -10,14 +10,14 @@ import {
   USEFUL_LINKS,
 } from "../../data/data";
 import { Link } from "react-router-dom";
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronRight, FaGoogle, FaLinkedin } from "react-icons/fa";
 
 function FooterTop() {
   return (
     <div className="footer-top">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 col-md-6 footer-contact">
+          <div className="col-lg-3 col-md-6 footer-contact">
             <h3>{COMPANY_NAME}</h3>
             <p>
               {COMPANY_ADDRESS} <br />
@@ -54,6 +54,28 @@ function FooterTop() {
                 </li>
               ))}
             </ul>
+          </div>
+
+          <div className="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <div className="social-links mt-1" style={{ textAlign: "left" }}>
+              <a
+                href="https://g.page/r/CZ7e1vbJmx5jEAE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="google-plus"
+              >
+                <FaGoogle className="bx" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/cahaya-sinar-makmur/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkedin"
+              >
+                <FaLinkedin className="bx" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

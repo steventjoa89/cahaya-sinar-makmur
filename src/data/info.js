@@ -2,7 +2,7 @@ import { IoIosGlobe } from "react-icons/io";
 import { MdDirectionsBike } from "react-icons/md";
 
 export const COMPANY_NAME = "Cahaya Sinar Makmur";
-export const COMPANY_ADDRESS = "Jl. Pejagalan Raya No. 85";
+export const COMPANY_ADDRESS = "Jl. Pejagalan Raya No. 85K";
 export const COMPANY_ADDRESS_2 = "Jakarta";
 export const COMPANY_ADDRESS_3 = "Indonesia";
 export const COMPANY_PHONE = "+62 819 058 7 5858";

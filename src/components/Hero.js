@@ -11,7 +11,7 @@ function Hero() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h1>Better Chemical Supplier For Your Business</h1>
+            <h1>Chemical Supplier For Your Business Needs</h1>
             <h2>
               We provide comprehensive solutions for all your business's
               chemical requirements.
@@ -19,7 +19,7 @@ function Hero() {
             {/* col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 aos-init aos-animate */}
             <div className="d-flex justify-content-center">
               <Link to="#about" className="btn-get-started scrollto">
-                Company Profile
+                About Us
               </Link>
             </div>
           </div>

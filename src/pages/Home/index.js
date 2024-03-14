@@ -2,13 +2,13 @@ import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
-import Clients from "../../components/Clients";
 import AboutUs from "../../components/AboutUs";
 import WhyUs from "../../components/WhyUs";
 import Services from "../../components/Services";
 import Faq from "../../components/Faq";
 import Products from "../../components/Products";
 import Cta from "../../components/Cta";
+import BackToTop from "../../components/BackToTop";
 
 function HomePage() {
   return (
@@ -16,7 +16,6 @@ function HomePage() {
       <Header />
       <Hero />
       <div id="main">
-        <Clients />
         <AboutUs />
         <WhyUs />
         <Services />
@@ -25,6 +24,7 @@ function HomePage() {
         <Faq />
       </div>
       <Footer />
+      <BackToTop />
     </>
   );
 }

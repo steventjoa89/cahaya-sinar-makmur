@@ -7,18 +7,14 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
-  // Toggle .header-scrolled class to #header when page is scrolled
   useEffect(() => {
     const handleScroll = () => {
-      // Check if document is scrolled (i.e., scroll position is greater than 0)
       const scrolled = window.scrollY > 100;
       setIsScrolled(scrolled);
     };
 
-    // Add scroll event listener when component mounts
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up: Remove event listener when component unmounts
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -47,13 +43,18 @@ function Header() {
               </Link>
             </li>
             <li>
+              <Link to="#products" className="nav-link scrollto">
+                Products
+              </Link>
+            </li>
+            <li>
               <Link to="#about" className="nav-link scrollto">
-                About
+                About Us
               </Link>
             </li>
             <li>
               <a className="nav-link scrollto" href="#contact">
-                Contact
+                Contact Us
               </a>
             </li>
           </ul>

@@ -1,5 +1,3 @@
-import { PRODUCTS } from "../data/info";
-
 export const toProperCase = (str) =>
   str.replace(/\b\w/g, (char) => char.toUpperCase());
 

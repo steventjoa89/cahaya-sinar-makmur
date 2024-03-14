@@ -8,6 +8,7 @@ import WhyUs from "../../components/WhyUs";
 import Services from "../../components/Services";
 import Faq from "../../components/Faq";
 import Products from "../../components/Products";
+import Cta from "../../components/Cta";
 
 function HomePage() {
   return (
@@ -19,6 +20,7 @@ function HomePage() {
         <AboutUs />
         <WhyUs />
         <Services />
+        <Cta />
         <Products />
         <Faq />
       </div>

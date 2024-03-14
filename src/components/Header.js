@@ -1,5 +1,5 @@
 import React from "react";
-import { COMPANY_NAME } from "../data/info";
+// import { COMPANY_NAME } from "../data/info";
 
 function Header() {
   return (

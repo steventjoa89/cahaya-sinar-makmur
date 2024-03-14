@@ -693,6 +693,7 @@ section {
   padding: 20px;
   background: #fff;
   border-radius: 4px;
+  text-align: left;
 }
 
 .why-us .accordion-list a {
@@ -714,8 +715,8 @@ section {
   padding-right: 10px;
 }
 
-.why-us .accordion-list i {
-  font-size: 24px;
+.why-us .accordion-list .chevron-icon {
+  font-size: 14px;
   position: absolute;
   right: 0;
   top: 0;

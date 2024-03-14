@@ -14,6 +14,36 @@ export const CLIENTS = [
   { name: "myob", image: "/images/clients/client-6.png" },
 ];
 
+export const ABOUT_US_HOME = [
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "Ullamco laboris nisi ut aliquip ex ea commodo consequat",
+  "Duis aute irure dolor in reprehenderit in voluptate velit",
+  "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+];
+
+export const WHY_US_TITLE = "Why choose ";
+export const WHY_US_TITLE_STRONG = "Cahaya Sinar Makmur";
+export const WHY_US_DESCRIPTION =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit";
+
+export const WHY_US_POINTS = [
+  {
+    question: "Non consectetur a erat nam at lectus urna duis?",
+    answer:
+      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
+  },
+  {
+    question: "Non consectetur a erat nam at lectus urna duis?",
+    answer:
+      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
+  },
+  {
+    question: "Non consectetur a erat nam at lectus urna duis?",
+    answer:
+      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
+  },
+];
+
 export const USEFUL_LINKS = [
   { name: "Home", link: "/" },
   { name: "About Us", link: "/about-us" },

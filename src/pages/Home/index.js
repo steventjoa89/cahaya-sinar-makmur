@@ -3,6 +3,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import Clients from "../../components/Clients";
+import AboutUs from "../../components/AboutUs";
+import WhyUs from "../../components/WhyUs";
 
 function HomePage() {
   return (
@@ -11,30 +13,9 @@ function HomePage() {
       <Hero />
       <div id="main">
         <Clients />
-        
+        <AboutUs />
+        <WhyUs />
       </div>
-
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
       <Footer />
     </>
   );

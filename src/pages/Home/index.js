@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
@@ -19,8 +19,8 @@ function HomePage() {
         <AboutUs />
         <WhyUs />
         <Services />
-        <Cta />
         <Products />
+        <Cta />
         <Faq />
       </div>
       <Footer />

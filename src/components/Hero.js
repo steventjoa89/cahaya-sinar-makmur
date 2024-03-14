@@ -1,5 +1,5 @@
 import React from "react";
-import { scrollToElement } from "../utils/customUtil";
+import { scrollToElement } from "../utils/scrollUtil";
 
 function Hero() {
   return (

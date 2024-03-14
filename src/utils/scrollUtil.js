@@ -11,3 +11,10 @@ export const scrollToElement = (el) => {
     });
   }
 };
+
+export const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};

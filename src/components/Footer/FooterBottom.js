@@ -9,7 +9,7 @@ function FooterBottom() {
         <strong>
           <span>{COMPANY_NAME}</span>
         </strong>
-        .&nbsp;All Rights Reserved
+        .
       </div>
     </div>
   );

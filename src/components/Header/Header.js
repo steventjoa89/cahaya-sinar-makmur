@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { COMPANY_NAME } from "../data/data";
+import { COMPANY_NAME } from "../../data/data";
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { scrollToElement, scrollToTop } from "../utils/scrollUtil";
+import { scrollToElement, scrollToTop } from "../../utils/scrollUtil";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -106,7 +106,6 @@ function Header() {
               </div>
             </li>
           </ul>
-          {/* <i className="bi bi-list mobile-nav-toggle"></i> */}
           <MdMenu className="mobile-nav-toggle" onClick={toggleMobileNav} />
         </nav>
       </div>

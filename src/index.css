@@ -158,6 +158,8 @@ h6 {
   position: relative;
 }
 
+.navbar a,
+.navbar a:focus,
 .navbar div,
 .navbar div:focus {
   display: flex;
@@ -172,6 +174,8 @@ h6 {
   cursor: pointer;
 }
 
+.navbar a i,
+.navbar a:focus i,
 .navbar div i,
 .navbar div:focus i {
   font-size: 12px;
@@ -179,9 +183,11 @@ h6 {
   margin-left: 5px;
 }
 
+.navbar a:hover,
 .navbar div:hover,
 .navbar .active,
 .navbar .active:focus,
+.navbar li:hover > a,
 .navbar li:hover > div {
   color: #47b2e4;
 }
@@ -329,15 +335,19 @@ h6 {
 }
 
 .navbar-mobile a,
-.navbar-mobile a:focus {
+.navbar-mobile a:focus,
+.navbar-mobile div,
+.navbar-mobile div:focus {
   padding: 10px 20px;
   font-size: 15px;
   color: #37517e;
 }
 
 .navbar-mobile a:hover,
+.navbar-mobile div:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover > a {
+.navbar-mobile li:hover > a,
+.navbar-mobile li:hover > div {
   color: #47b2e4;
 }
 
@@ -363,16 +373,20 @@ h6 {
   min-width: 200px;
 }
 
-.navbar-mobile .dropdown ul a {
+.navbar-mobile .dropdown ul a,
+.navbar-mobile .dropdown ul div {
   padding: 10px 20px;
 }
 
-.navbar-mobile .dropdown ul a i {
+.navbar-mobile .dropdown ul a i,
+.navbar-mobile .dropdown ul div i {
   font-size: 12px;
 }
 
 .navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul div:hover,
 .navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > div,
 .navbar-mobile .dropdown ul li:hover > a {
   color: #47b2e4;
 }
@@ -1645,6 +1659,7 @@ section {
   font-size: 28px;
   font-weight: 600;
   color: #37517e;
+  text-align: left;
 }
 
 .breadcrumbs ol {
@@ -1873,3 +1888,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 } */
+
+/* Additional CSS */
+.inner-page h2 {
+  font-size: 30px;
+  /* font-weight: bold; */
+  /* text-transform: uppercase; */
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  /* position: relative; */
+  color: #37517e;
+}

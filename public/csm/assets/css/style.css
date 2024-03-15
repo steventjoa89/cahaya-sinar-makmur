@@ -315,15 +315,15 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   min-width: 200px;
 }
 
-.navbar-mobile .dropdown ul a {
+.navbar-mobile .dropdown ul div {
   padding: 10px 20px;
 }
 
-.navbar-mobile .dropdown ul a i {
+.navbar-mobile .dropdown ul div i {
   font-size: 12px;
 }
 
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul div:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > div {
   color: #68A4C4;
 }
 

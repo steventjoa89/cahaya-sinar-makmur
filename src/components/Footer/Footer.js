@@ -1,6 +1,6 @@
 import React from "react";
-import FooterBottom from "./Footer/FooterBottom";
-import FooterTop from "./Footer/FooterTop";
+import FooterBottom from "./FooterBottom";
+import FooterTop from "./FooterTop";
 
 function Footer() {
   return (

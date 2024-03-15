@@ -7,6 +7,7 @@ import { scrollToElement, scrollToTop } from "../utils/scrollUtil";
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const [navbarPosition, setNavbarPosition] = useState("hero");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,8 +15,32 @@ function Header() {
       setIsScrolled(scrolled);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const navbarlinksActive = () => {
+      const scrollY = window.scrollY + 200;
+      const navbar = document.getElementById("navbar");
+      if (navbar) {
+        const navbarHeight = document.getElementById("navbar").offsetHeight;
+        // Loop through each section and check if it's in view
+        document.querySelectorAll("section").forEach((section) => {
+          const sectionTop = section.offsetTop - navbarHeight;
+          const sectionBottom = sectionTop + section.offsetHeight;
+          if (scrollY >= sectionTop && scrollY < sectionBottom) {
+            setNavbarPosition(section.id);
+          }
+        });
+      }
+    };
+
+    // window.addEventListener("scroll", [handleScroll, a]);
+    window.addEventListener("scroll", () => {
+      handleScroll();
+      navbarlinksActive();
+    });
+    return () =>
+      window.removeEventListener("scroll", () => {
+        handleScroll();
+        navbarlinksActive();
+      });
   }, []);
 
   const toggleMobileNav = () => setIsMobileNavOpen(!isMobileNavOpen);
@@ -39,7 +64,9 @@ function Header() {
           <ul>
             <li>
               <div
-                className="nav-link scrollto active"
+                className={`nav-link scrollto ${
+                  navbarPosition === "hero" && "active"
+                }`}
                 onClick={() => scrollToTop()}
               >
                 Home
@@ -47,7 +74,10 @@ function Header() {
             </li>
             <li>
               <div
-                className="nav-link scrollto"
+                data-track="about"
+                className={`nav-link scrollto ${
+                  navbarPosition === "about" && "active"
+                }`}
                 onClick={() => scrollToElement("about")}
               >
                 About Us
@@ -55,7 +85,10 @@ function Header() {
             </li>
             <li>
               <div
-                className="nav-link scrollto"
+                data-track="product"
+                className={`nav-link scrollto ${
+                  navbarPosition === "product" && "active"
+                }`}
                 onClick={() => scrollToElement("product")}
               >
                 Products
@@ -63,7 +96,10 @@ function Header() {
             </li>
             <li>
               <div
-                className="nav-link scrollto"
+                data-track="cta"
+                className={`nav-link scrollto ${
+                  navbarPosition === "cta" && "active"
+                }`}
                 onClick={() => scrollToElement("cta")}
               >
                 Contact Us

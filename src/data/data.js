@@ -5,52 +5,27 @@ export const COMPANY_ADDRESS_3 = "Indonesia";
 export const COMPANY_PHONE = "+62 819 058 7 5858";
 export const COMPANY_EMAIL = "steventjoa89@gmail.com";
 
-export const CLIENTS = [
-  { name: "myob", image: "/images/clients/client-1.png" },
-  { name: "myob", image: "/images/clients/client-2.png" },
-  { name: "myob", image: "/images/clients/client-3.png" },
-  { name: "myob", image: "/images/clients/client-4.png" },
-  { name: "myob", image: "/images/clients/client-5.png" },
-  { name: "myob", image: "/images/clients/client-6.png" },
-];
-
-export const TOTAL_PRODUCTS_OVERVIEW = 5;
-export const PRODUCTS = [
+export const PRODUCT_CATEGORIES = [
   {
     id: 1,
-    name: "Product 1",
-    category: ["a"],
-    image: "/images/products/portfolio-1.jpg",
+    name: "solvent",
+    image: "https://media.istockphoto.com/id/1063777306/photo/yellow-liquid-spilled-petrol-additive-innovative-supply.jpg?s=612x612&w=0&k=20&c=VVTMkh_J-Mlm8v_PqO_D_h3Dzl1JNmLu5tCa1ZUEEtI=",
+    // image: "/images/products/solvent.jpg",
   },
   {
     id: 2,
-    name: "Product 2",
-    category: ["a", "b"],
-    image: "/images/products/portfolio-2.jpg",
+    name: "alcohols",
+    image: "https://media.istockphoto.com/id/1418367954/photo/acetone-in-glass-chemical-in-the-laboratory-and-industry.jpg?s=612x612&w=0&k=20&c=O3OSJtTMQXKek5bdrhJUab9Q_HGEDlBABEv3FOn2qK8=",
   },
   {
     id: 3,
-    name: "Product 3",
-    category: ["a"],
-    image: "/images/products/portfolio-3.jpg",
+    name: "glycols",
+    image: "https://media.istockphoto.com/id/157529625/photo/toxic-substance.jpg?s=612x612&w=0&k=20&c=YxS0aRk5Rg5gqZm9rsdW6jAmnYk_FrFcRaRg_KRIeN8=",
   },
   {
     id: 4,
-    name: "Product 4",
-    category: ["a"],
-    image: "/images/products/portfolio-4.jpg",
-  },
-  {
-    id: 5,
-    name: "Product 5",
-    category: ["c"],
-    image: "/images/products/portfolio-5.jpg",
-  },
-  {
-    id: 6,
-    name: "Product 6",
-    category: ["c"],
-    image: "/images/products/portfolio-6.jpg",
+    name: "others",
+    image: "https://media.istockphoto.com/id/182188515/photo/analyzing-samples.jpg?s=612x612&w=0&k=20&c=-uo-jsjj1DawNP4J3JCnBHYNlH3Ip2uaL37MDc-koW4=",
   },
 ];
 

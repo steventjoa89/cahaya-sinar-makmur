@@ -1,67 +1,43 @@
-import React, { useState } from "react";
-import { PRODUCTS, TOTAL_PRODUCTS_OVERVIEW } from "../data/data";
-import { getUniqueProductCategories, toProperCase } from "../utils/stringUtil";
-import { getRandomObjectFromObjectArray } from "../utils/mathUtil";
+import React from "react";
+import { PRODUCT_CATEGORIES } from "../data/data";
+import { toProperCase } from "../utils/stringUtil";
+import { Link } from "react-router-dom";
 
 function Products() {
-  const [randomProducts] = useState(
-    getRandomObjectFromObjectArray(PRODUCTS, TOTAL_PRODUCTS_OVERVIEW)
-  );
-  const [uniqueCategories] = useState(
-    getUniqueProductCategories(randomProducts)
-  );
-
   return (
     <section id="product" className="product">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
           <h2>Products</h2>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            Explore a wide selection of premium chemical products from our
+            company, designed to support and advance your industry's
+            development.
           </p>
         </div>
-
-        <ul
-          id="product-flters"
-          className="d-flex justify-content-center"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <li data-filter="*" className="filter-active">
-            All
-          </li>
-          {uniqueCategories.map((category, i) => (
-            <li key={i} data-filter={`.filter-${category[0]}`}>
-              {toProperCase(category)}
-            </li>
-          ))}
-        </ul>
 
         <div
           className="row product-container"
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          {randomProducts.map((product, i) => (
-            <div
-              key={i}
-              className={`col-lg-4 col-md-6 product-item ${product.category
-                .map((el) => `filter-${el}`)
-                .join(" ")}`}
-            >
-              <div className="product-img">
-                <img src={product.image} className="img-fluid" alt="" />
-              </div>
-              <div className="product-info">
-                <h4>{product.name}</h4>
-                <p>{product.category.join(", ")}</p>
-              </div>
+          {PRODUCT_CATEGORIES.map((category, i) => (
+            <div key={i} className="col-lg-3 col-md-6 product-item">
+              <Link to="/products">
+                <div className="product-img">
+                  <img src={category.image} className="img-fluid" alt="" />
+                </div>
+                <div className="product-info">
+                  <p>{toProperCase(category.name)}</p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>
+
+        <Link to="/products" className="btn-show-more">
+          Explore
+        </Link>
       </div>
     </section>
   );

@@ -48,13 +48,14 @@ function HeaderStatic({ activeMenu = "" }) {
               </Link>
             </li>
             <li>
-              <div
+              <Link
+                to="/contact-us"
                 className={`nav-link scroll-to ${
-                  activeMenu === "contactUs" && "active"
+                  activeMenu === "contact" && "active"
                 }`}
               >
                 Contact Us
-              </div>
+              </Link>
             </li>
           </ul>
           <MdMenu className="mobile-nav-toggle" onClick={toggleMobileNav} />

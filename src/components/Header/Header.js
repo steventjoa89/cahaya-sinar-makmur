@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { COMPANY_NAME } from "../../data/data";
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { scrollToElement, scrollToTop } from "../../utils/scrollUtil";
+// import { scrollToElement, scrollToTop } from "../../utils/scrollUtil";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-  const [navbarPosition, setNavbarPosition] = useState("hero");
+  // const [navbarPosition, setNavbarPosition] = useState("hero");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,31 +15,31 @@ function Header() {
       setIsScrolled(scrolled);
     };
 
-    const navbarlinksActive = () => {
-      const scrollY = window.scrollY + 200;
-      const navbar = document.getElementById("navbar");
-      if (navbar) {
-        const navbarHeight = document.getElementById("navbar").offsetHeight;
-        // Loop through each section and check if it's in view
-        document.querySelectorAll("section").forEach((section) => {
-          const sectionTop = section.offsetTop - navbarHeight;
-          const sectionBottom = sectionTop + section.offsetHeight;
-          if (scrollY >= sectionTop && scrollY < sectionBottom) {
-            setNavbarPosition(section.id);
-          }
-        });
-      }
-    };
+    // const navbarlinksActive = () => {
+    //   const scrollY = window.scrollY + 200;
+    //   const navbar = document.getElementById("navbar");
+    //   if (navbar) {
+    //     const navbarHeight = document.getElementById("navbar").offsetHeight;
+    //     // Loop through each section and check if it's in view
+    //     document.querySelectorAll("section").forEach((section) => {
+    //       const sectionTop = section.offsetTop - navbarHeight;
+    //       const sectionBottom = sectionTop + section.offsetHeight;
+    //       if (scrollY >= sectionTop && scrollY < sectionBottom) {
+    //         setNavbarPosition(section.id);
+    //       }
+    //     });
+    //   }
+    // };
 
     // window.addEventListener("scroll", [handleScroll, a]);
     window.addEventListener("scroll", () => {
       handleScroll();
-      navbarlinksActive();
+      // navbarlinksActive();
     });
     return () =>
       window.removeEventListener("scroll", () => {
         handleScroll();
-        navbarlinksActive();
+        // navbarlinksActive();
       });
   }, []);
 
@@ -63,47 +63,24 @@ function Header() {
         >
           <ul>
             <li>
-              <div
-                className={`nav-link scrollto ${
-                  navbarPosition === "hero" && "active"
-                }`}
-                onClick={() => scrollToTop()}
-              >
+              <Link to="/" className="nav-link scrollto active">
                 Home
-              </div>
+              </Link>
             </li>
             <li>
-              <div
-                data-track="about"
-                className={`nav-link scrollto ${
-                  navbarPosition === "about" && "active"
-                }`}
-                onClick={() => scrollToElement("about")}
-              >
+              <Link to="/about-us" className="nav-link scrollto">
                 About Us
-              </div>
+              </Link>
             </li>
             <li>
-              <div
-                data-track="product"
-                className={`nav-link scrollto ${
-                  navbarPosition === "product" && "active"
-                }`}
-                onClick={() => scrollToElement("product")}
-              >
+              <Link to="/products" className="nav-link scrollto">
                 Products
-              </div>
+              </Link>
             </li>
             <li>
-              <div
-                data-track="cta"
-                className={`nav-link scrollto ${
-                  navbarPosition === "cta" && "active"
-                }`}
-                onClick={() => scrollToElement("cta")}
-              >
+              <Link to="/contact-us" className="nav-link scrollto">
                 Contact Us
-              </div>
+              </Link>
             </li>
           </ul>
           <MdMenu className="mobile-nav-toggle" onClick={toggleMobileNav} />

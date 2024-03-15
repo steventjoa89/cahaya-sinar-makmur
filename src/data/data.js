@@ -1,12 +1,3 @@
-import { IoMdSpeedometer } from "react-icons/io";
-import { FaUserAlt, FaWarehouse } from "react-icons/fa";
-import {
-  BiCheckCircle,
-  BiDollarCircle,
-  BiMedal,
-  BiTimeFive,
-} from "react-icons/bi";
-
 export const COMPANY_NAME = "Cahaya Sinar Makmur";
 export const COMPANY_ADDRESS = "Jl. Pejagalan Raya No. 85K";
 export const COMPANY_ADDRESS_2 = "Jakarta, 11240";
@@ -21,74 +12,6 @@ export const CLIENTS = [
   { name: "myob", image: "/images/clients/client-4.png" },
   { name: "myob", image: "/images/clients/client-5.png" },
   { name: "myob", image: "/images/clients/client-6.png" },
-];
-
-export const WHY_US_TITLE = "Why choose ";
-export const WHY_US_TITLE_STRONG = "Cahaya Sinar Makmur";
-export const WHY_US_DESCRIPTION =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit";
-
-export const WHY_US_POINTS = [
-  {
-    question: "Non consectetur a erat nam at lectus urna duis?",
-    answer:
-      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
-  },
-  {
-    question: "Non consectetur a erat nam at lectus urna duis?",
-    answer:
-      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
-  },
-  {
-    question: "Non consectetur a erat nam at lectus urna duis?",
-    answer:
-      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
-  },
-];
-
-export const SERVICES_ITEMS = [
-  {
-    icon: <BiCheckCircle />,
-    title: "Quality",
-    description:
-      "At Cahaya Sinar Makmur, quality is at the core of everything we do. We strive to provide our customers with the highest quality chemical products.",
-  },
-  {
-    icon: <BiMedal />,
-    title: "Experience",
-    description:
-      "With over 20 years of experience in Indonesia, PT. Cahaya Sinar Makmur is the perfect partner for your company.",
-  },
-  {
-    icon: <BiDollarCircle />,
-    title: "Cost-Effective",
-    description:
-      "Why settle for costly materials when we can deliver the same quality at a lower price? Explore our special pricing options designed for your business.",
-  },
-  {
-    icon: <FaUserAlt />,
-    title: "Service Oriented",
-    description:
-      "Experience our customer-centric approach, where both new and existing customers receive the exceptional service they deserve.",
-  },
-  {
-    icon: <BiTimeFive />,
-    title: "On-Time Delivery",
-    description:
-      "Struggling to manage and track your orders? Our trained service agents guarantee on-time delivery of your goods.",
-  },
-  {
-    icon: <FaWarehouse />,
-    title: "Large Warehouse",
-    description:
-      "Situated near Daan Mogot road, PT. Cahaya Sinar Makmur's Indonesia Logistic Center features a sizable warehouse. Our expansive storage capacity guarantees that all chemicals comply with regulatory standards and quality requirements.",
-  },
-  {
-    icon: <IoMdSpeedometer />,
-    title: "Efficiency",
-    description:
-      "We believe that efficiency rests on three key pillars: Cost-effectiveness, Convenience, and Customer Satisfaction. By upholding these pillars, we ensure that we meet our efficiency standards.",
-  },
 ];
 
 export const TOTAL_PRODUCTS_OVERVIEW = 5;

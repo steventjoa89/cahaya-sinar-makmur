@@ -54,7 +54,12 @@ function Header() {
               </div>
             </li>
             <li>
-              <div className="nav-link scrollto">Products</div>
+              <div
+                className="nav-link scrollto"
+                onClick={() => scrollToElement("portfolio")}
+              >
+                Products
+              </div>
             </li>
             <li>
               <div className="nav-link scrollto">Contact Us</div>

@@ -21,6 +21,7 @@ function HomePage() {
         <Services />
         <Products />
         <Cta />
+        
         <Faq />
       </div>
       <Footer />

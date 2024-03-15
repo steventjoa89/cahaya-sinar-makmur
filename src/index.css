@@ -669,6 +669,7 @@ section {
 .why-us .content p {
   font-size: 15px;
   color: #848484;
+  text-align: left;
 }
 
 .why-us .img {

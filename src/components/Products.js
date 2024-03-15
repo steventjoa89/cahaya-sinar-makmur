@@ -12,7 +12,7 @@ function Products() {
   );
 
   return (
-    <section id="portfolio" className="portfolio">
+    <section id="product" className="product">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
           <h2>Products</h2>
@@ -25,7 +25,7 @@ function Products() {
         </div>
 
         <ul
-          id="portfolio-flters"
+          id="product-flters"
           className="d-flex justify-content-center"
           data-aos="fade-up"
           data-aos-delay="100"
@@ -41,21 +41,21 @@ function Products() {
         </ul>
 
         <div
-          className="row portfolio-container"
+          className="row product-container"
           data-aos="fade-up"
           data-aos-delay="200"
         >
           {randomProducts.map((product, i) => (
             <div
               key={i}
-              className={`col-lg-4 col-md-6 portfolio-item ${product.category
+              className={`col-lg-4 col-md-6 product-item ${product.category
                 .map((el) => `filter-${el}`)
                 .join(" ")}`}
             >
-              <div className="portfolio-img">
+              <div className="product-img">
                 <img src={product.image} className="img-fluid" alt="" />
               </div>
-              <div className="portfolio-info">
+              <div className="product-info">
                 <h4>{product.name}</h4>
                 <p>{product.category.join(", ")}</p>
               </div>

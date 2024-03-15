@@ -5,6 +5,13 @@ export const COMPANY_ADDRESS_3 = "Indonesia";
 export const COMPANY_PHONE = "+62 819 058 7 5858";
 export const COMPANY_EMAIL = "steventjoa89@gmail.com";
 
+export const MENU_NAV = [
+  { name: "Home", link: "/" },
+  { name: "About Us", menuName: 'about', link: "/about-us" },
+  { name: "Products", menuName: 'product', link: "/products" },
+  { name: "Contact Us", menuName: 'contact', link: "/contact-us" },
+];
+
 export const PRODUCT_CATEGORIES = [
   {
     id: 1,

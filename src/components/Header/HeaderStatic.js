@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { COMPANY_NAME } from "../../data/data";
+import { COMPANY_NAME, MENU_NAV } from "../../data/data";
 import { MdMenu } from "react-icons/md";
 
 function HeaderStatic({ activeMenu = "" }) {
@@ -21,42 +21,18 @@ function HeaderStatic({ activeMenu = "" }) {
           }`}
         >
           <ul>
-            <li>
-              {/* <div className="nav-link scroll-to">Home</div> */}
-              <Link to="/" className="nav-link scroll-to">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/about-us"
-                className={`nav-link scroll-to ${
-                  activeMenu === "about" && "active"
-                }`}
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/products"
-                className={`nav-link scroll-to ${
-                  activeMenu === "product" && "active"
-                }`}
-              >
-                Products
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact-us"
-                className={`nav-link scroll-to ${
-                  activeMenu === "contact" && "active"
-                }`}
-              >
-                Contact Us
-              </Link>
-            </li>
+            {MENU_NAV.map((menu, i) => (
+              <li key={i}>
+                <Link
+                  to={menu.link}
+                  className={`nav-link scroll-to ${
+                    activeMenu === (menu.menuName || "") && "active"
+                  }`}
+                >
+                  {menu.name}
+                </Link>
+              </li>
+            ))}
           </ul>
           <MdMenu className="mobile-nav-toggle" onClick={toggleMobileNav} />
         </nav>

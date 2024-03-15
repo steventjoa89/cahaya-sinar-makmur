@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { COMPANY_NAME } from "../../data/data";
+import { COMPANY_NAME, MENU_NAV } from "../../data/data";
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
 // import { scrollToElement, scrollToTop } from "../../utils/scrollUtil";
@@ -31,16 +31,16 @@ function Header() {
     //   }
     // };
 
-    // window.addEventListener("scroll", [handleScroll, a]);
-    window.addEventListener("scroll", () => {
-      handleScroll();
-      // navbarlinksActive();
-    });
-    return () =>
-      window.removeEventListener("scroll", () => {
-        handleScroll();
-        // navbarlinksActive();
-      });
+    window.addEventListener("scroll", handleScroll);
+    // window.addEventListener("scroll", () => {
+    //   handleScroll();
+    //   // navbarlinksActive();
+    // });
+    return () => window.removeEventListener("scroll", handleScroll);
+    // window.removeEventListener("scroll", () => {
+    //   handleScroll();
+    //   // navbarlinksActive();
+    // });
   }, []);
 
   const toggleMobileNav = () => setIsMobileNavOpen(!isMobileNavOpen);
@@ -62,26 +62,16 @@ function Header() {
           }`}
         >
           <ul>
-            <li>
-              <Link to="/" className="nav-link scrollto active">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about-us" className="nav-link scrollto">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link to="/products" className="nav-link scrollto">
-                Products
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact-us" className="nav-link scrollto">
-                Contact Us
-              </Link>
-            </li>
+            {MENU_NAV.map((menu, i) => (
+              <li key={i}>
+                <Link
+                  to={menu.link}
+                  className={`nav-link scrollto ${i === 0 && "active"}`}
+                >
+                  {menu.name}
+                </Link>
+              </li>
+            ))}
           </ul>
           <MdMenu className="mobile-nav-toggle" onClick={toggleMobileNav} />
         </nav>

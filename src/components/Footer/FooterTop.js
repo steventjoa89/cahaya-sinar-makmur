@@ -6,17 +6,12 @@ import {
   COMPANY_EMAIL,
   COMPANY_NAME,
   COMPANY_PHONE,
+  MENU_NAV,
 } from "../../data/data";
 import { Link } from "react-router-dom";
 import { FaChevronRight, FaGoogle, FaLinkedin } from "react-icons/fa";
 
 function FooterTop() {
-  const usefulLinks = [
-    { name: "Home", link: "/" },
-    { name: "About Us", link: "about-us" },
-    { name: "Products", link: "/products" },
-  ];
-
   return (
     <div className="footer-top">
       <div className="container">
@@ -39,7 +34,7 @@ function FooterTop() {
           <div className="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              {usefulLinks.map((link, i) => (
+              {MENU_NAV.map((link, i) => (
                 <li key={i}>
                   <FaChevronRight className="chevron-icon" size={12} />
                   <Link to={link.link}>{link.name}</Link>
@@ -48,17 +43,17 @@ function FooterTop() {
             </ul>
           </div>
 
-           <div className="col-lg-2 col-md-6 footer-links">
+          <div className="col-lg-2 col-md-6 footer-links">
             {/* <h4></h4> */}
             {/* <ul> */}
-              {/* {OUR_SERVICES.map((link, i) => (
+            {/* {OUR_SERVICES.map((link, i) => (
                 <li key={i}>
                   <FaChevronRight className="chevron-icon" size={12} />
                   <Link to={link.link}>{link.name}</Link>
                 </li>
               ))} */}
             {/* </ul> */}
-          </div> 
+          </div>
 
           <div className="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>

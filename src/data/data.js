@@ -28,34 +28,3 @@ export const PRODUCT_CATEGORIES = [
     image: "https://media.istockphoto.com/id/182188515/photo/analyzing-samples.jpg?s=612x612&w=0&k=20&c=-uo-jsjj1DawNP4J3JCnBHYNlH3Ip2uaL37MDc-koW4=",
   },
 ];
-
-export const FAQS = [
-  {
-    question: "Non consectetur a erat nam at lectus urna duis?",
-    answer:
-      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
-  },
-  {
-    question: "Non consectetur a erat nam at lectus urna duis?",
-    answer:
-      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
-  },
-  {
-    question: "Non consectetur a erat nam at lectus urna duis?",
-    answer:
-      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.",
-  },
-];
-
-export const USEFUL_LINKS = [
-  { name: "Home", link: "/" },
-  { name: "About Us", link: "/about-us" },
-  { name: "Services", link: "/services" },
-  { name: "Terms of service", link: "/terms-of-service" },
-  { name: "Privacy Policy", link: "/privacy-policy" },
-];
-
-export const OUR_SERVICES = [
-  { name: "Product", link: "/product" },
-  { name: "Marketing", link: "/marketing" },
-];

@@ -62,7 +62,12 @@ function Header() {
               </div>
             </li>
             <li>
-              <div className="nav-link scrollto">Contact Us</div>
+              <div
+                className="nav-link scrollto"
+                onClick={() => scrollToElement("cta")}
+              >
+                Contact Us
+              </div>
             </li>
           </ul>
           {/* <i className="bi bi-list mobile-nav-toggle"></i> */}

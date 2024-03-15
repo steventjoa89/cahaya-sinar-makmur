@@ -36,7 +36,7 @@ function Products() {
         </div>
 
         <Link to="/products" className="btn-show-more">
-          Explore
+          Explore More
         </Link>
       </div>
     </section>

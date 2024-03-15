@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Cta() {
   return (
@@ -7,19 +6,26 @@ function Cta() {
       <div className="container" data-aos="zoom-in">
         <div className="row">
           <div className="col-lg-9 text-center text-lg-start">
-            <h3>Call To Action</h3>
+            <h3>Contact Us</h3>
             <p>
               {" "}
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+              For inquiries, partnerships, or to learn more about our chemical
+              products and services, please feel free to contact us. Our
+              dedicated team is ready to assist you and provide the information
+              you need. You can reach us via phone or email. We look forward to
+              hearing from you and discussing how we can support your business
+              needs.
             </p>
           </div>
           <div className="col-lg-3 cta-btn-container text-center">
-            <Link className="cta-btn align-middle" href="#">
-              Call To Action
-            </Link>
+            <a
+              className="cta-btn align-middle"
+              href="https://wa.me/6281905875858"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Whatsapp
+            </a>
           </div>
         </div>
       </div>

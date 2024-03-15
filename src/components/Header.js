@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { COMPANY_NAME } from "../data/data";
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { scrollToElement, scrollToTop } from "../utils/scrollUtil";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,24 +38,26 @@ function Header() {
         >
           <ul>
             <li>
-              <Link to="#hero" className="nav-link scrollto active">
+              <div
+                className="nav-link scrollto active"
+                onClick={() => scrollToTop()}
+              >
                 Home
-              </Link>
+              </div>
             </li>
             <li>
-              <Link to="#about" className="nav-link scrollto">
+              <div
+                className="nav-link scrollto"
+                onClick={() => scrollToElement("about")}
+              >
                 About Us
-              </Link>
+              </div>
             </li>
             <li>
-              <Link to="#products" className="nav-link scrollto">
-                Products
-              </Link>
+              <div className="nav-link scrollto">Products</div>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#contact">
-                Contact Us
-              </a>
+              <div className="nav-link scrollto">Contact Us</div>
             </li>
           </ul>
           {/* <i className="bi bi-list mobile-nav-toggle"></i> */}

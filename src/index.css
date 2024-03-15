@@ -158,8 +158,8 @@ h6 {
   position: relative;
 }
 
-.navbar a,
-.navbar a:focus {
+.navbar div,
+.navbar div:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -169,19 +169,20 @@ h6 {
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
+  cursor: pointer;
 }
 
-.navbar a i,
-.navbar a:focus i {
+.navbar div i,
+.navbar div:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
 
-.navbar a:hover,
+.navbar div:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover > div {
   color: #47b2e4;
 }
 

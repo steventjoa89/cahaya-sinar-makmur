@@ -528,7 +528,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 45px 0;
   overflow: hidden;
 }
 
@@ -1240,14 +1240,14 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Pricing
+# Product
 --------------------------------------------------------------*/
-.pricing .row {
+.product .row {
   padding-top: 40px;
 }
 
-.pricing .box {
-  padding: 60px 40px;
+.product .box {
+  padding: 20px 5px;
   box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
   background: #fff;
   height: 100%;
@@ -1255,14 +1255,14 @@ section {
   border-radius: 5px;
 }
 
-.pricing h3 {
+.product h3 {
   font-weight: 500;
   margin-bottom: 15px;
   font-size: 20px;
   color: #37517e;
 }
 
-.pricing h4 {
+.product h4 {
   font-size: 48px;
   color: #37517e;
   font-weight: 400;
@@ -1270,17 +1270,17 @@ section {
   margin-bottom: 25px;
 }
 
-.pricing h4 sup {
+.product h4 sup {
   font-size: 28px;
 }
 
-.pricing h4 span {
+.product h4 span {
   color: #47b2e4;
   font-size: 18px;
   display: block;
 }
 
-.pricing ul {
+.product ul {
   padding: 20px 0;
   list-style: none;
   color: #999;
@@ -1288,12 +1288,20 @@ section {
   line-height: 20px;
 }
 
-.pricing ul li {
+.product ul li {
   padding: 10px 0 10px 30px;
   position: relative;
 }
 
-.pricing ul i {
+.product ul a {
+  color: #999;
+  cursor: pointer;
+}
+.product ul a:hover {
+  text-decoration: underline;
+}
+
+.product ul i {
   color: #28a745;
   font-size: 24px;
   position: absolute;
@@ -1301,19 +1309,19 @@ section {
   top: 6px;
 }
 
-.pricing ul .na {
+.product ul .na {
   color: #ccc;
 }
 
-.pricing ul .na i {
+.product ul .na i {
   color: #ccc;
 }
 
-.pricing ul .na span {
+.product ul .na span {
   text-decoration: line-through;
 }
 
-.pricing .buy-btn {
+.product .buy-btn {
   display: inline-block;
   padding: 12px 35px;
   border-radius: 50px;
@@ -1326,40 +1334,44 @@ section {
   border: 1px solid #47b2e4;
 }
 
-.pricing .buy-btn:hover {
+.product .buy-btn:hover {
   background: #47b2e4;
   color: #fff;
 }
 
-.pricing .featured {
-  border-top-color: #47b2e4;
+.product .featured {
+  /* border-top-color: #47b2e4; */
+  border-top-color: rgba(71, 178, 228, 0.6);
+}
+.product .featured:hover {
+  border-top-color: rgba(71, 178, 228, 1);
 }
 
-.pricing .featured .buy-btn {
+.product .featured .buy-btn {
   background: #47b2e4;
   color: #fff;
 }
 
-.pricing .featured .buy-btn:hover {
+.product .featured .buy-btn:hover {
   background: #23a3df;
 }
 
 @media (max-width: 992px) {
-  .pricing .box {
-    max-width: 60%;
+  .product .box {
+    max-width: 100%;
     margin: 0 auto 30px auto;
   }
 }
 
 @media (max-width: 767px) {
-  .pricing .box {
-    max-width: 80%;
+  .product .box {
+    max-width: 100%;
     margin: 0 auto 30px auto;
   }
 }
 
 @media (max-width: 420px) {
-  .pricing .box {
+  .product .box {
     max-width: 100%;
     margin: 0 auto 30px auto;
   }
@@ -1888,6 +1900,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 } */
+
+/* Masonry Grid */
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  /* background: grey; */
+  margin-bottom: 30px;
+}
+
+/* Optional, different gutter size on mobile */
+@media (max-width: 800px) {
+  .my-masonry-grid {
+    margin-left: -15px; /* gutter size offset */
+  }
+  .my-masonry-grid_column {
+    padding-left: 15px; /* gutter size offset */
+  }
+  .my-masonry-grid_column > div {
+    margin-bottom: 15px; /* space between items */
+  }
+}
 
 /* Additional CSS */
 .inner-page h2 {

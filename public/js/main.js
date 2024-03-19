@@ -97,17 +97,17 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on(
-    "click",
-    ".navbar .dropdown > a",
-    function (e) {
-      if (select("#navbar").classList.contains("navbar-mobile")) {
-        e.preventDefault();
-        this.nextElementSibling.classList.toggle("dropdown-active");
-      }
-    },
-    true
-  );
+  // on(
+  //   "click",
+  //   ".navbar .dropdown > li",
+  //   function (e) {
+  //     if (select("#navbar").classList.contains("navbar-mobile")) {
+  //       e.preventDefault();
+  //       this.nextElementSibling.classList.toggle("dropdown-active");
+  //     }
+  //   },
+  //   true
+  // );
 
   /**
    * Scrool with ofset on links with a class name .scrollto
@@ -187,28 +187,28 @@
   //       itemSelector: ".product-item",
   //     });
 
-      // let productFilters = select("#product-flters li", true);
+  // let productFilters = select("#product-flters li", true);
 
-      // on(
-        // "click",
-        // "#product-flters li",
-        // function (e) {
-          // e.preventDefault();
-          // productFilters.forEach(function (el) {
-          //   el.classList.remove("filter-active");
-          // });
-          // this.classList.add("filter-active");
+  // on(
+  // "click",
+  // "#product-flters li",
+  // function (e) {
+  // e.preventDefault();
+  // productFilters.forEach(function (el) {
+  //   el.classList.remove("filter-active");
+  // });
+  // this.classList.add("filter-active");
 
-          // productIsotope.arrange({
-          //   filter: this.getAttribute("data-filter"),
-          // });
-          // productIsotope.on("arrangeComplete", function () {
-          //   AOS.refresh();
-          // });
-        // },
-        // true
-      // );
-    // }
+  // productIsotope.arrange({
+  //   filter: this.getAttribute("data-filter"),
+  // });
+  // productIsotope.on("arrangeComplete", function () {
+  //   AOS.refresh();
+  // });
+  // },
+  // true
+  // );
+  // }
   // });
 
   /**

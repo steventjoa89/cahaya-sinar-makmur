@@ -164,7 +164,7 @@ h6 {
 .navbar div:focus {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 500;
@@ -229,7 +229,8 @@ h6 {
   min-width: 200px;
 }
 
-.navbar .dropdown ul a {
+.navbar .dropdown ul a,
+.navbar .dropdown ul div {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
@@ -237,13 +238,16 @@ h6 {
   color: #0c3c53;
 }
 
-.navbar .dropdown ul a i {
+.navbar .dropdown ul a i,
+.navbar .dropdown ul div i {
   font-size: 12px;
 }
 
 .navbar .dropdown ul a:hover,
+.navbar .dropdown ul div:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul li:hover > a,
+.navbar .dropdown ul li:hover > div {
   color: #47b2e4;
 }
 

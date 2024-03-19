@@ -11,8 +11,11 @@ import {
   COMPANY_EMAIL,
   COMPANY_PHONE,
 } from "../../data/data";
+import { useTranslation } from "react-i18next";
 
 function ContactUsPage() {
+  const { t } = useTranslation();
+
   return (
     <>
       <HeaderStatic activeMenu="contact" />
@@ -20,6 +23,7 @@ function ContactUsPage() {
         <BreadCrumb breadCrumbPath={["Contact Us"]} />
 
         <section id="contact" className="contact">
+          <div>{t("agree")}</div>
           <div
             className="container"
             data-aos="fade-up"

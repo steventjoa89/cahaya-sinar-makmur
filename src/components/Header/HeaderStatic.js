@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { COMPANY_NAME, MENU_NAV } from "../../data/data";
 import { MdMenu } from "react-icons/md";
+import LanguageSelector from "./LanguageSelector";
 
 function HeaderStatic({ activeMenu = "" }) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -33,6 +34,7 @@ function HeaderStatic({ activeMenu = "" }) {
                 </Link>
               </li>
             ))}
+            <LanguageSelector />
           </ul>
           <MdMenu className="mobile-nav-toggle" onClick={toggleMobileNav} />
         </nav>

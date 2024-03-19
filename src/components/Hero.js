@@ -33,7 +33,8 @@ function Hero() {
             data-aos-delay="200"
           >
             <img
-              src="/images/hero-img.png"
+              // src={`${process.env.PUBLIC_URL}/images/hero-img.png`}
+              src={`${process.env.PUBLIC_URL}/images/hero-img.png`}
               className="img-fluid animated"
               alt=""
             />

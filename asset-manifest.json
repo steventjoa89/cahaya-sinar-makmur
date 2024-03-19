@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cahaya-sinar-makmur/static/css/main.0cd5daad.css",
-    "main.js": "/cahaya-sinar-makmur/static/js/main.eefe3ea9.js",
+    "main.js": "/cahaya-sinar-makmur/static/js/main.2dd8ec9c.js",
     "static/media/cta-bg.jpg": "/cahaya-sinar-makmur/static/media/cta-bg.4e51e23b30341262fece.jpg",
     "index.html": "/cahaya-sinar-makmur/index.html",
     "main.0cd5daad.css.map": "/cahaya-sinar-makmur/static/css/main.0cd5daad.css.map",
-    "main.eefe3ea9.js.map": "/cahaya-sinar-makmur/static/js/main.eefe3ea9.js.map"
+    "main.2dd8ec9c.js.map": "/cahaya-sinar-makmur/static/js/main.2dd8ec9c.js.map"
   },
   "entrypoints": [
     "static/css/main.0cd5daad.css",
-    "static/js/main.eefe3ea9.js"
+    "static/js/main.2dd8ec9c.js"
   ]
 }

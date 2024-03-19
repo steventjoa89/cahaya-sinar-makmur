@@ -6,6 +6,15 @@ export const getUniqueCategoriesFromProductsArr = (products) => {
   return [...new Set(allCategories)];
 };
 
+export const getproductsFirstLetterFromProductsArr = (products) =>
+  [...new Set(products.map((product) => product.name.charAt(0)))].sort();
+
 export const getProductsByCategory = (products, category) => {
-  return products.filter(product => product.category.includes(category));
+  return products.filter((product) => product.category.includes(category));
+};
+
+export const getProductsByFirstLetter = (products, letter) => {
+  return products.filter(
+    (product) => product.name.charAt(0).toLowerCase() === letter.toLowerCase()
+  );
 };

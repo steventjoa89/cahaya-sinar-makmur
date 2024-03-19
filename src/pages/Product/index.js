@@ -1,16 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderStatic from "../../components/Header/HeaderStatic";
 import Footer from "../../components/Footer/Footer";
 import BackToTop from "../../components/BackToTop";
 import BreadCrumb from "../../components/BreadCrumb";
 import Masonry from "react-masonry-css";
 import {
-  getProductsByCategory,
-  getUniqueCategoriesFromProductsArr,
+  getProductsByFirstLetter,
+  getproductsFirstLetterFromProductsArr,
   toProperCase,
 } from "../../utils/stringUtil";
 import { PRODUCTS } from "../../data/data";
-import { Link } from "react-router-dom";
+import { FaTimes } from "react-icons/fa";
 
 function ProductPage() {
   const breakpointColumnsObj = {
@@ -20,7 +20,17 @@ function ProductPage() {
     500: 1,
   };
 
-  const uniqueProductCategories = getUniqueCategoriesFromProductsArr(PRODUCTS);
+  const [searchText, setSearchText] = useState("");
+
+  // Products and Filtered Products
+  const filteredProducts =
+    searchText.trim() !== ""
+      ? PRODUCTS.filter((product) =>
+          product.name.toLowerCase().includes(searchText.toLowerCase())
+        )
+      : PRODUCTS;
+  const productsFirstLetter =
+    getproductsFirstLetterFromProductsArr(filteredProducts);
 
   return (
     <>
@@ -28,24 +38,50 @@ function ProductPage() {
       <main id="main" style={{ borderBottom: "2px solid #f3f5fa" }}>
         <BreadCrumb breadCrumbPath={["Products"]} />
 
-        <section id="product" className="product">
+        <section id="product" className="product" style={{ paddingTop: 0 }}>
+          <div
+            className="container"
+            data-aos="fade-up"
+            style={{ paddingBottom: 30 }}
+          >
+            <div className="row justify-content-end">
+              <div className="col-lg-3">
+                <div className="input-group">
+                  <input
+                    className="form-control border-end-0 border rounded-pill"
+                    value={searchText}
+                    onChange={(event) => setSearchText(event.target.value)}
+                    placeholder="Search our products..."
+                  />
+                  {searchText && (
+                    <button
+                      type="button"
+                      className="btn border-0 rounded-pill"
+                      style={{ marginLeft: "-40px", zIndex: 100 }}
+                      onClick={() => setSearchText('')}
+                    >
+                      <FaTimes />
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="container" data-aos="fade-up">
             <Masonry
               breakpointCols={breakpointColumnsObj}
               className="my-masonry-grid"
               columnClassName="my-masonry-grid_column"
             >
-              {uniqueProductCategories.map((category, i) => (
-                <div key={i} className="mt-4 mt-lg-0" data-aos="fade-up">
+              {productsFirstLetter.map((letter, i) => (
+                <div key={i} className="mt-4 mt-lg-0">
                   <div className="box featured">
-                    <h3>{toProperCase(category)}</h3>
+                    <h3>{toProperCase(letter)}</h3>
                     <ul>
-                      {getProductsByCategory(PRODUCTS, category).map(
+                      {getProductsByFirstLetter(filteredProducts, letter).map(
                         (product, j) => (
                           <li key={j}>
-                            <Link to={`/products/${product.id}`}>
-                              {product.name}
-                            </Link>
+                            <span className="product-name">{product.name}</span>
                           </li>
                         )
                       )}

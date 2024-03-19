@@ -1288,8 +1288,16 @@ section {
   line-height: 20px;
 }
 
+.product ul .product-name {
+  padding: 20px 0;
+  list-style: none;
+  color: #000;
+  text-align: left;
+  line-height: 20px;
+}
+
 .product ul li {
-  padding: 10px 0 10px 30px;
+  padding: 10px 0 3px 30px;
   position: relative;
 }
 

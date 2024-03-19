@@ -68,6 +68,7 @@ function ContactUsPage() {
                   frameBorder="0"
                   style={{ border: 0, width: "100%", height: "100%" }}
                   allowFullScreen={true}
+                  title="Google Map Location"
                 ></iframe>
               </div>
             </div>

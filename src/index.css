@@ -304,6 +304,11 @@ h6 {
   .navbar ul {
     display: none;
   }
+
+  /* Change Logo Font Size */
+  #header .logo {
+    font-size: 18px;
+  }
 }
 
 .navbar-mobile {

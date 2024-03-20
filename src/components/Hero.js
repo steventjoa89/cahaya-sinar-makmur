@@ -1,7 +1,10 @@
 import React from "react";
 import { scrollToElement } from "../utils/scrollUtil";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section id="hero" className="d-flex align-items-center">
       <div className="container">
@@ -11,11 +14,8 @@ function Hero() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h1>Chemical Supplier For Your Business Needs</h1>
-            <h2>
-              We provide comprehensive solutions for all your business's
-              chemical requirements.
-            </h2>
+            <h1>{t("heroTitle")}</h1>
+            <h2>{t("heroDescription")}</h2>
             <div className="d-flex justify-content-center">
               <div
                 to="#about"
@@ -23,7 +23,7 @@ function Hero() {
                 onClick={() => scrollToElement("about")}
                 style={{ cursor: "pointer" }}
               >
-                About Us
+                {t("aboutUs")}
               </div>
             </div>
           </div>

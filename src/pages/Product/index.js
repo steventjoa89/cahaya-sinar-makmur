@@ -11,8 +11,11 @@ import {
 } from "../../utils/stringUtil";
 import { PRODUCTS } from "../../data/data";
 import { FaTimes } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function ProductPage() {
+  const { t } = useTranslation();
+
   const breakpointColumnsObj = {
     default: 3,
     1100: 3,
@@ -36,7 +39,8 @@ function ProductPage() {
     <>
       <HeaderStatic activeMenu="product" />
       <main id="main" style={{ borderBottom: "2px solid #f3f5fa" }}>
-        <BreadCrumb breadCrumbPath={["Products"]} />
+        <BreadCrumb breadCrumbPath={[t("products")]} />
+        {/* <BreadCrumb breadCrumbPath={[t("aboutUs")]} /> */}
 
         <section id="product" className="product" style={{ paddingTop: 0 }}>
           <div
@@ -51,14 +55,14 @@ function ProductPage() {
                     className="form-control border-end-0 border rounded-pill"
                     value={searchText}
                     onChange={(event) => setSearchText(event.target.value)}
-                    placeholder="Search our products..."
+                    placeholder={t("searchProductPlaceholder") + "..."}
                   />
                   {searchText && (
                     <button
                       type="button"
                       className="btn border-0 rounded-pill"
                       style={{ marginLeft: "-40px", zIndex: 100 }}
-                      onClick={() => setSearchText('')}
+                      onClick={() => setSearchText("")}
                     >
                       <FaTimes />
                     </button>

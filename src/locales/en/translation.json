@@ -1,10 +1,21 @@
 {
   "home": "Home",
+  "homePage": {
+    "heroTitle": "Chemical Supplier For Your Business Needs",
+    "heroDescription": "We provide comprehensive solutions for all your business's chemical requirements.",
+    "aboutUsLeftDescription": [
+      "Since its inception in May 1989, PT Cahaya Sinar Makmur has been at the forefront of the chemical distribution industry, committed to providing unparalleled chemical solutions that enhance the quality of domestically produced goods.",
+      "Our steadfast dedication to excellence and innovation has established us as a trusted partner to businesses across various sectors, offering a meticulously curated selection of chemicals to meet diverse needs."
+    ],
+    "aboutUsRightDescription": [
+      "With an unwavering vision to drive progress and sustainability, we empower our clients with the resources and support necessary for their success.",
+      "Join us in our journey towards a brighter future, where quality chemicals lead to quality products."
+    ],
+    "learnMore": "Learn More"
+  },
   "aboutUs": "About Us",
   "products": "Products",
   "contactUs": "Contact Us",
-  "heroTitle": "Chemical Supplier For Your Business Needs",
-  "heroDescription": "We provide comprehensive solutions for all your business's chemical requirements.",
   "ourGoalsTitle": "Our Goals",
   "goalsDecription1": "PT. Cahaya Sinar Makmur is a renowned leader in the chemical industry, specializing in the import and distribution of high-quality products from our headquarters in Jakarta, Indonesia.",
   "goalsDecription2": "Established in May 1989, PT Cahaya Sinar Makmur is dedicated to providing superior chemical solutions that bolster the local manufacturing sector. Our commitment to quality ensures that our products meet or exceed international standards, all while remaining competitively priced.",

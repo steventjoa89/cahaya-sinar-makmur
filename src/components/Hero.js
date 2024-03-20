@@ -14,8 +14,8 @@ function Hero() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h1>{t("heroTitle")}</h1>
-            <h2>{t("heroDescription")}</h2>
+            <h1>{t("homePage.heroTitle")}</h1>
+            <h2>{t("homePage.heroDescription")}</h2>
             <div className="d-flex justify-content-center">
               <div
                 to="#about"
@@ -33,7 +33,6 @@ function Hero() {
             data-aos-delay="200"
           >
             <img
-              // src={`${process.env.PUBLIC_URL}/images/hero-img.png`}
               src={`${process.env.PUBLIC_URL}/images/hero-img.png`}
               className="img-fluid animated"
               alt=""

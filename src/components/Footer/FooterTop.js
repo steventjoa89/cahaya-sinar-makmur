@@ -11,9 +11,14 @@ import {
 import { Link } from "react-router-dom";
 import { FaChevronRight, FaGoogle, FaLinkedin } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { ensureArray } from "../../utils/stringUtil";
 
 function FooterTop() {
   const { t } = useTranslation();
+
+  const headerMenuNav = ensureArray(
+    t("headerMenuNav", { returnObjects: true })
+  );
 
   return (
     <div className="footer-top">
@@ -35,9 +40,9 @@ function FooterTop() {
           </div>
 
           <div className="col-lg-2 col-md-6 footer-links">
-            <h4>{t("usefulLinks")}</h4>
+            <h4>{t("footer.usefulLinks")}</h4>
             <ul>
-              {MENU_NAV.map((link, i) => (
+              {headerMenuNav.map((link, i) => (
                 <li key={i}>
                   <FaChevronRight className="chevron-icon" size={12} />
                   <Link to={link.link}>{link.name}</Link>
@@ -49,7 +54,7 @@ function FooterTop() {
           <div className="col-lg-2 col-md-6 footer-links"></div>
 
           <div className="col-lg-3 col-md-6 footer-links">
-            <h4>{t("ourSocialNetworks")}</h4>
+            <h4>{t("footer.ourSocialNetworks")}</h4>
             <div className="social-links mt-1" style={{ textAlign: "left" }}>
               <a
                 href="https://g.page/r/CZ7e1vbJmx5jEAE"

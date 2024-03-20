@@ -1,20 +1,17 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { ensureArray } from "../utils/stringUtil";
 
 function AboutUs() {
   const { t } = useTranslation();
 
-  let aboutUsLeft =
-    t("homePage.aboutUsLeftDescription", { returnObjects: true }) || [];
-  if (!Array.isArray(aboutUsLeft)) {
-    aboutUsLeft = [];
-  }
-  let aboutUsRight =
-    t("homePage.aboutUsRightDescription", { returnObjects: true }) || [];
-  if (!Array.isArray(aboutUsRight)) {
-    aboutUsRight = [];
-  }
+  const aboutUsLeft = ensureArray(
+    t("homePage.aboutUsLeftDescription", { returnObjects: true })
+  );
+  const aboutUsRight = ensureArray(
+    t("homePage.aboutUsRightDescription", { returnObjects: true })
+  );
 
   return (
     <section id="about" className="about">

@@ -3,8 +3,16 @@ import { COMPANY_NAME, MENU_NAV } from "../../data/data";
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
 import LanguageSelector from "./LanguageSelector";
+import { useTranslation } from "react-i18next";
+import { ensureArray } from "../../utils/stringUtil";
 
 function Header() {
+  const { t } = useTranslation();
+
+  const headerMenuNav = ensureArray(
+    t("headerMenuNav", { returnObjects: true })
+  );
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
@@ -37,7 +45,7 @@ function Header() {
           }`}
         >
           <ul>
-            {MENU_NAV.map((menu, i) => (
+            {headerMenuNav.map((menu, i) => (
               <li key={i}>
                 <Link
                   to={menu.link}

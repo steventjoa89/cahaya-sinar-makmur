@@ -18,12 +18,12 @@ function AboutUsPage() {
           <div className="container" style={{ textAlign: "left" }}>
             <div className="row" data-aos="fade-up" data-aos-delay={100}>
               <div className="col-lg-12 pt-4 pt-lg-0">
-                <h2>{t("ourGoalsTitle")}</h2>
-                <p>{t("goalsDecription1")}</p>
-                <p>{t("goalsDecription2")}</p>
-                <p>{t("goalsDecription3")}</p>
-                <p>{t("goalsDecription4")}</p>
-                <p>{t("goalsDecription5")}</p>
+                <h2>{t("aboutUsPage.ourGoalsTitle")}</h2>
+                <p>{t("aboutUsPage.goalsDecription1")}</p>
+                <p>{t("aboutUsPage.goalsDecription2")}</p>
+                <p>{t("aboutUsPage.goalsDecription3")}</p>
+                <p>{t("aboutUsPage.goalsDecription4")}</p>
+                <p>{t("aboutUsPage.goalsDecription5")}</p>
               </div>
             </div>
 
@@ -34,12 +34,12 @@ function AboutUsPage() {
               style={{ marginTop: "20px" }}
             >
               <div className="col-lg-6 pt-4 pt-lg-0">
-                <h2>{t("ourVision")}</h2>
-                <p>{t("ourVisionDesc")}</p>
+                <h2>{t("aboutUsPage.ourVision")}</h2>
+                <p>{t("aboutUsPage.ourVisionDesc")}</p>
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0">
-                <h2>{t("ourMission")}</h2>
-                <p>{t("ourMissionDesc")}</p>
+                <h2>{t("aboutUsPage.ourMission")}</h2>
+                <p>{t("aboutUsPage.ourMissionDesc")}</p>
               </div>
             </div>
           </div>

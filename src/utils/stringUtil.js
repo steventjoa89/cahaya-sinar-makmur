@@ -18,3 +18,7 @@ export const getProductsByFirstLetter = (products, letter) => {
     (product) => product.name.charAt(0).toLowerCase() === letter.toLowerCase()
   );
 };
+
+export const ensureArray = (data) => {
+  return Array.isArray(data) ? data : [];
+};

@@ -1,5 +1,14 @@
 {
   "home": "Home",
+  "aboutUs": "About Us",
+  "products": "Products",
+  "contactUs": "Contact Us",
+  "headerMenuNav": [
+    { "name": "Home", "link": "/" },
+    { "name": "About Us", "menuName": "about", "link": "/about-us" },
+    { "name": "Products", "menuName": "product", "link": "/products" },
+    { "name": "Contact Us", "menuName": "contact", "link": "/contact-us" }
+  ],
   "homePage": {
     "heroTitle": "Chemical Supplier For Your Business Needs",
     "heroDescription": "We provide comprehensive solutions for all your business's chemical requirements.",
@@ -13,25 +22,28 @@
     ],
     "learnMore": "Learn More"
   },
-  "aboutUs": "About Us",
-  "products": "Products",
-  "contactUs": "Contact Us",
-  "ourGoalsTitle": "Our Goals",
-  "goalsDecription1": "PT. Cahaya Sinar Makmur is a renowned leader in the chemical industry, specializing in the import and distribution of high-quality products from our headquarters in Jakarta, Indonesia.",
-  "goalsDecription2": "Established in May 1989, PT Cahaya Sinar Makmur is dedicated to providing superior chemical solutions that bolster the local manufacturing sector. Our commitment to quality ensures that our products meet or exceed international standards, all while remaining competitively priced.",
-  "goalsDecription3": "At PT. Cahaya Sinar Makmur, we adhere to the principle of being a trusted partner to our clients. This commitment extends beyond product quality to encompass exceptional service and support. Our success is underpinned by our foundational pillars, upheld by our dedicated and motivated team.",
-  "goalsDecription4": "Driven by our founder's vision of fostering strong customer relationships, we take pride in the long-standing satisfaction of our clients. Over the past 30 years, we have cultivated a strong sense of family within our organization, united in our pursuit of excellence and our shared dream of success.",
-  "goalsDecription5": "PT. Cahaya Sinar Makmur's commitment to excellence extends beyond product quality to include a strong emphasis on environmental sustainability. We prioritize eco-friendly practices in our operations, ensuring that our impact on the environment is minimized. Additionally, our dedication to innovation and continuous improvement drives us to constantly explore new technologies and methodologies to better serve our customers and the community. Our goal is not only to be a leader in the chemical industry but also a responsible corporate citizen contributing positively to society and the environment.",
-  "ourVision": "Our Vision",
-  "ourVisionDesc": "To be the leading importer and distributor of chemicals, renowned for our commitment to quality, reliability, and sustainability. We strive to exceed customer expectations, foster innovation, and contribute positively to the industry and society as a whole.",
-  "ourMission": "Our Mission",
-  "ourMissionDesc": "Our mission is to reliably source and supply high-quality chemicals, meeting the diverse needs of our customers. We are dedicated to fostering long-term partnerships, delivering exceptional value, and upholding the highest standards of safety and environmental responsibility. Through continuous innovation and operational excellence, we aim to be the preferred choice for Indonesia chemical solutions.",
+  "aboutUsPage": {
+    "ourGoalsTitle": "Our Goals",
+    "goalsDecription1": "PT. Cahaya Sinar Makmur is a renowned leader in the chemical industry, specializing in the import and distribution of high-quality products from our headquarters in Jakarta, Indonesia.",
+    "goalsDecription2": "Established in May 1989, PT Cahaya Sinar Makmur is dedicated to providing superior chemical solutions that bolster the local manufacturing sector. Our commitment to quality ensures that our products meet or exceed international standards, all while remaining competitively priced.",
+    "goalsDecription3": "At PT. Cahaya Sinar Makmur, we adhere to the principle of being a trusted partner to our clients. This commitment extends beyond product quality to encompass exceptional service and support. Our success is underpinned by our foundational pillars, upheld by our dedicated and motivated team.",
+    "goalsDecription4": "Driven by our founder's vision of fostering strong customer relationships, we take pride in the long-standing satisfaction of our clients. Over the past 30 years, we have cultivated a strong sense of family within our organization, united in our pursuit of excellence and our shared dream of success.",
+    "goalsDecription5": "PT. Cahaya Sinar Makmur's commitment to excellence extends beyond product quality to include a strong emphasis on environmental sustainability. We prioritize eco-friendly practices in our operations, ensuring that our impact on the environment is minimized. Additionally, our dedication to innovation and continuous improvement drives us to constantly explore new technologies and methodologies to better serve our customers and the community. Our goal is not only to be a leader in the chemical industry but also a responsible corporate citizen contributing positively to society and the environment.",
+    "ourVision": "Our Vision",
+    "ourVisionDesc": "To be the leading importer and distributor of chemicals, renowned for our commitment to quality, reliability, and sustainability. We strive to exceed customer expectations, foster innovation, and contribute positively to the industry and society as a whole.",
+    "ourMission": "Our Mission",
+    "ourMissionDesc": "Our mission is to reliably source and supply high-quality chemicals, meeting the diverse needs of our customers. We are dedicated to fostering long-term partnerships, delivering exceptional value, and upholding the highest standards of safety and environmental responsibility. Through continuous innovation and operational excellence, we aim to be the preferred choice for Indonesia chemical solutions."
+  },
   "searchProductPlaceholder": "Search our products",
-  "contactUsDescription": "For inquiries, feedback, or partnership opportunities, please do not hesitate to contact us using the information provided below. We welcome the chance to discuss potential collaborations with you.",
+  "contactUsPage": {
+    "contactUsDescription": "For inquiries, feedback, or partnership opportunities, please do not hesitate to contact us using the information provided below. We welcome the chance to discuss potential collaborations with you."
+  },
   "location": "Location",
   "email": "Email",
   "call": "Call",
   "phone": "Phone",
-  "usefulLinks": "Useful Links",
-  "ourSocialNetworks": "Our Social Networks"
+  "footer": {
+    "usefulLinks": "Useful Links",
+    "ourSocialNetworks": "Our Social Networks"
+  }
 }

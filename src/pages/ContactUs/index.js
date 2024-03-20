@@ -30,7 +30,7 @@ function ContactUsPage() {
           >
             <div className="section-title">
               <h2>{t("contactUs")}</h2>
-              <p>{t("contactUsDescription")}</p>
+              <p>{t("contactUsPage.contactUsDescription")}</p>
             </div>
 
             <div className="row">

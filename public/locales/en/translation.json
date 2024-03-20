@@ -1,6 +1,10 @@
 {
-  "welcome": "Welcome to React",
-  "description": "This is a multi-language React application.",
-  "agree": "agree",
-  "cancel": "cancelll"
+  "home": "Home",
+  "aboutUs": "About Us",
+  "products": "Products",
+  "contactUs": "Contact Us",
+  "contactUsDescription": "For inquiries, feedback, or partnership opportunities, please do not hesitate to contact us using the information provided below. We welcome the chance to discuss potential collaborations with you.",
+  "location": "Location",
+  "email": "E-mail",
+  "call": "Call"
 }

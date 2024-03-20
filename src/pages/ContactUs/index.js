@@ -23,20 +23,14 @@ function ContactUsPage() {
         <BreadCrumb breadCrumbPath={["Contact Us"]} />
 
         <section id="contact" className="contact">
-          <div>{t("agree")}</div>
           <div
             className="container"
             data-aos="fade-up"
             style={{ paddingBottom: 30 }}
           >
             <div className="section-title">
-              <h2>Contact</h2>
-              <p>
-                For inquiries, feedback, or partnership opportunities, please do
-                not hesitate to contact us using the information provided below.
-                We welcome the chance to discuss potential collaborations with
-                you.
-              </p>
+              <h2>{t("contactUs")}</h2>
+              <p>{t("contactUsDescription")}</p>
             </div>
 
             <div className="row">
@@ -44,7 +38,7 @@ function ContactUsPage() {
                 <div className="info">
                   <div className="address">
                     <FaMapMarkerAlt className="icon" />
-                    <h4>Location:</h4>
+                    <h4>{t("location")}:</h4>
                     <p>
                       {COMPANY_ADDRESS}
                       <br />
@@ -54,13 +48,13 @@ function ContactUsPage() {
 
                   <div className="email">
                     <FaEnvelope className="icon" />
-                    <h4>Email:</h4>
+                    <h4>{t("email")}:</h4>
                     <p>{COMPANY_EMAIL}</p>
                   </div>
 
                   <div className="phone">
                     <FaPhoneAlt className="icon" />
-                    <h4>Call:</h4>
+                    <h4>{t("call")}:</h4>
                     <p>{COMPANY_PHONE}</p>
                   </div>
                 </div>

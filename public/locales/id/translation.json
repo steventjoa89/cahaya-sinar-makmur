@@ -1,6 +1,10 @@
 {
-  "welcome": "Bienvenido a React",
-  "description": "Esta es una aplicación React multilenguaje.",
-  "agree": "setuju",
-  "cancel": "Batalll"
+  "home": "Beranda",
+  "aboutUs": "Tentang Kami",
+  "products": "Produk",
+  "contactUs": "Hubungi Kami",
+  "contactUsDescription": "Untuk pertanyaan, masukan, atau peluang kemitraan, jangan ragu untuk menghubungi kami menggunakan informasi yang tertera di bawah ini. Kami menyambut baik kesempatan untuk membahas kolaborasi potensial dengan Anda.",
+  "location": "Lokasi",
+  "email": "E-mail",
+  "call": "Hubungi"
 }

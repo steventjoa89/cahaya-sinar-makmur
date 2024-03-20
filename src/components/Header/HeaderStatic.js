@@ -34,7 +34,7 @@ function HeaderStatic({ activeMenu = "" }) {
                 </Link>
               </li>
             ))}
-            <LanguageSelector />
+            <LanguageSelector isMobileNavOpen={isMobileNavOpen} />
           </ul>
           <MdMenu className="mobile-nav-toggle" onClick={toggleMobileNav} />
         </nav>

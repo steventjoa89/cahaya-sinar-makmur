@@ -3,12 +3,10 @@ import { COMPANY_NAME, MENU_NAV } from "../../data/data";
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
 import LanguageSelector from "./LanguageSelector";
-// import { scrollToElement, scrollToTop } from "../../utils/scrollUtil";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-  // const [navbarPosition, setNavbarPosition] = useState("hero");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,32 +14,8 @@ function Header() {
       setIsScrolled(scrolled);
     };
 
-    // const navbarlinksActive = () => {
-    //   const scrollY = window.scrollY + 200;
-    //   const navbar = document.getElementById("navbar");
-    //   if (navbar) {
-    //     const navbarHeight = document.getElementById("navbar").offsetHeight;
-    //     // Loop through each section and check if it's in view
-    //     document.querySelectorAll("section").forEach((section) => {
-    //       const sectionTop = section.offsetTop - navbarHeight;
-    //       const sectionBottom = sectionTop + section.offsetHeight;
-    //       if (scrollY >= sectionTop && scrollY < sectionBottom) {
-    //         setNavbarPosition(section.id);
-    //       }
-    //     });
-    //   }
-    // };
-
     window.addEventListener("scroll", handleScroll);
-    // window.addEventListener("scroll", () => {
-    //   handleScroll();
-    //   // navbarlinksActive();
-    // });
     return () => window.removeEventListener("scroll", handleScroll);
-    // window.removeEventListener("scroll", () => {
-    //   handleScroll();
-    //   // navbarlinksActive();
-    // });
   }, []);
 
   const toggleMobileNav = () => setIsMobileNavOpen(!isMobileNavOpen);
@@ -73,7 +47,7 @@ function Header() {
                 </Link>
               </li>
             ))}
-            <LanguageSelector />
+            <LanguageSelector isMobileNavOpen={isMobileNavOpen} />
           </ul>
           <MdMenu className="mobile-nav-toggle" onClick={toggleMobileNav} />
         </nav>

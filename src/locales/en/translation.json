@@ -10,17 +10,114 @@
     { "name": "Contact Us", "menuName": "contact", "link": "/contact-us" }
   ],
   "homePage": {
-    "heroTitle": "Chemical Supplier For Your Business Needs",
-    "heroDescription": "We provide comprehensive solutions for all your business's chemical requirements.",
-    "aboutUsLeftDescription": [
-      "Since its inception in May 1989, PT Cahaya Sinar Makmur has been at the forefront of the chemical distribution industry, committed to providing unparalleled chemical solutions that enhance the quality of domestically produced goods.",
-      "Our steadfast dedication to excellence and innovation has established us as a trusted partner to businesses across various sectors, offering a meticulously curated selection of chemicals to meet diverse needs."
-    ],
-    "aboutUsRightDescription": [
-      "With an unwavering vision to drive progress and sustainability, we empower our clients with the resources and support necessary for their success.",
-      "Join us in our journey towards a brighter future, where quality chemicals lead to quality products."
-    ],
-    "learnMore": "Learn More"
+    "hero": {
+      "heroTitle": "Chemical Supplier For Your Business Needs",
+      "heroDescription": "We provide comprehensive solutions for all your business's chemical requirements."
+    },
+    "aboutUs": {
+      "aboutUsLeftDescription": [
+        "Since its inception in May 1989, PT Cahaya Sinar Makmur has been at the forefront of the chemical distribution industry, committed to providing unparalleled chemical solutions that enhance the quality of domestically produced goods.",
+        "Our steadfast dedication to excellence and innovation has established us as a trusted partner to businesses across various sectors, offering a meticulously curated selection of chemicals to meet diverse needs."
+      ],
+      "aboutUsRightDescription": [
+        "With an unwavering vision to drive progress and sustainability, we empower our clients with the resources and support necessary for their success.",
+        "Join us in our journey towards a brighter future, where quality chemicals lead to quality products."
+      ],
+      "learnMore": "Learn More"
+    },
+    "whyUs": {
+      "title": "Why choose",
+      "description": "In Indonesia, PT. Cahaya Sinar Makmur stands out as a leading company in chemical distribution excellence. Our commitment to providing high-quality products, paired with unparalleled customer service, positions us as the premier choice for all your chemical requirements.",
+      "whyUsQnAs": [
+        {
+          "question": "How do you ensure the quality of your chemical products?",
+          "answer": "We adhere to rigorous quality control procedures at every stage of our supply chain, from sourcing to delivery. Our products are strictly evaluated to ensure they meet international safety and quality standards, providing our clients with the best chemical solutions available."
+        },
+        {
+          "question": "How does your customer service set you apart from competitors?",
+          "answer": "Our customer service is unparalleled, focusing on personalized support and swift responses. Our team is dedicated to providing expert guidance and efficient solutions, ensuring your needs are met promptly and effectively, every time."
+        },
+        {
+          "question": "Why is PT. Cahaya Sinar Makmur a trusted name in the chemical distribution industry?",
+          "answer": "With decades of experience, PT. Cahaya Sinar Makmur has established itself as a reliable partner in the chemical distribution field. Our deep industry knowledge, extensive network, and commitment to sustainability make us a trusted choice for businesses looking for responsible and efficient chemical solutions."
+        },
+        {
+          "question": "What additional benefits do clients gain by partnering with you?",
+          "answer": "Clients benefit from our comprehensive approach to chemical distribution, which includes competitive pricing and a robust product portfolio. We also offer logistical support and inventory management, making the procurement process seamless and cost-effective."
+        }
+      ]
+    },
+    "services": {
+      "title": "Services",
+      "serviceItems": [
+        {
+          "icon": "BiCheckCircle",
+          "title": "Quality",
+          "description": "At Cahaya Sinar Makmur, quality is at the core of everything we do. We strive to provide our customers with the highest quality chemical products."
+        },
+        {
+          "icon": "BiMedal",
+          "title": "Experience",
+          "description": "With over 20 years of experience in Indonesia, PT. Cahaya Sinar Makmur is the perfect partner for your company."
+        },
+        {
+          "icon": "BiDollarCircle",
+          "title": "Cost-Effective",
+          "description": "Why settle for costly materials when we can deliver the same quality at a lower price? Explore our special pricing options designed for your business."
+        },
+        {
+          "icon": "FaUserAlt",
+          "title": "Service Oriented",
+          "description": "Experience our customer-centric approach, where both new and existing customers receive the exceptional service they deserve."
+        },
+        {
+          "icon": "BiTimeFive",
+          "title": "On-Time Delivery",
+          "description": "Struggling to manage and track your orders? Our trained service agents guarantee on-time delivery of your goods."
+        },
+        {
+          "icon": "FaWarehouse",
+          "title": "Large Warehouse",
+          "description": "Situated near Daan Mogot road, PT. Cahaya Sinar Makmur's Indonesia Logistic Center features a sizable warehouse. Our expansive storage capacity guarantees that all chemicals comply with regulatory standards and quality requirements."
+        },
+        {
+          "icon": "IoMdSpeedometer",
+          "title": "Efficiency",
+          "description": "We believe that efficiency rests on three key pillars: Cost-effectiveness, Convenience, and Customer Satisfaction. By upholding these pillars, we ensure that we meet our efficiency standards."
+        }
+      ]
+    },
+    "product": {
+      "description": "Explore a wide selection of premium chemical products from our company, designed to support and advance your industry's development."
+    },
+    "cta": {
+      "description": "For inquiries, partnerships, or to learn more about our chemical products and services, please feel free to contact us. Our dedicated team is ready to assist you and provide the information you need. You can reach us via phone or email. We look forward to hearing from you and discussing how we can support your business needs."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "faqs": [
+        {
+          "question": "What products does PT Cahaya Sinar Makmur offer?",
+          "answer": "PT Cahaya Sinar Makmur offers a wide range of chemical products for various industries, including pharmaceuticals, agriculture, manufacturing, and more. Our product portfolio includes solvents, acids, bases, and specialty chemicals, among others."
+        },
+        {
+          "question": "How long has PT Cahaya Sinar Makmur been in the chemical distribution industry?",
+          "answer": "PT Cahaya Sinar Makmur has been in the chemical distribution industry for over 20 years, establishing ourselves as a trusted and reliable partner for businesses in need of high-quality chemical solutions."
+        },
+        {
+          "question": "What are PT Cahaya Sinar Makmur's core values and commitments to its customers?",
+          "answer": "Our core values include integrity, excellence, and customer satisfaction. We are committed to providing our customers with the highest quality products, exceptional customer service, and innovative solutions to meet their needs."
+        },
+        {
+          "question": "What sets PT Cahaya Sinar Makmur apart from other chemical distributors?",
+          "answer": "We differentiate ourselves through our commitment to quality, customer service, and sustainability. Our focus on delivering high-quality products, personalized customer service, and sustainable practices sets us apart as a trusted partner in the chemical distribution industry."
+        },
+        {
+          "question": "What industries does PT Cahaya Sinar Makmur serve?",
+          "answer": "We serve a wide range of industries, including pharmaceuticals, agriculture, manufacturing, and more. Our diverse product portfolio caters to the unique needs of each industry, providing them with high-quality chemical solutions."
+        }
+      ]
+    }
   },
   "aboutUsPage": {
     "ourGoalsTitle": "Our Goals",
@@ -38,6 +135,7 @@
   "contactUsPage": {
     "contactUsDescription": "For inquiries, feedback, or partnership opportunities, please do not hesitate to contact us using the information provided below. We welcome the chance to discuss potential collaborations with you."
   },
+  "seeMore": "See More",
   "location": "Location",
   "email": "Email",
   "call": "Call",

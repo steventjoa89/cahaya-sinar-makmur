@@ -7,10 +7,10 @@ function AboutUs() {
   const { t } = useTranslation();
 
   const aboutUsLeft = ensureArray(
-    t("homePage.aboutUsLeftDescription", { returnObjects: true })
+    t("homePage.aboutUs.aboutUsLeftDescription", { returnObjects: true })
   );
   const aboutUsRight = ensureArray(
-    t("homePage.aboutUsRightDescription", { returnObjects: true })
+    t("homePage.aboutUs.aboutUsRightDescription", { returnObjects: true })
   );
 
   return (
@@ -31,7 +31,7 @@ function AboutUs() {
               <p key={i}>{about}</p>
             ))}
             <Link to="/about-us" className="btn-learn-more">
-              {t("homePage.learnMore")}
+              {t("homePage.aboutUs.learnMore")}
             </Link>
           </div>
         </div>

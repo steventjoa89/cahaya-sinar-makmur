@@ -31,6 +31,7 @@ function LanguageSelector({ isMobileNavOpen }) {
   };
 
   const getFlagCodeByCode = (code) => {
+    if (code == "en-US") return "US";
     const language = languages.find((lang) => lang.code === code);
     return language ? language.flagCode.toUpperCase() : "";
   };

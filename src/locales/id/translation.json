@@ -10,17 +10,114 @@
     { "name": "Hubungi Kami", "menuName": "contact", "link": "/contact-us" }
   ],
   "homePage": {
-    "heroTitle": "Supplier Bahan Kimia Untuk Kebutuhan Bisnis Anda",
-    "heroDescription": "Kami menyediakan solusi komprehensif untuk semua kebutuhan bahan kimia bisnis Anda.",
-    "aboutUsLeftDescription": [
-      "Sejak berdirinya pada bulan Mei 1989, PT Cahaya Sinar Makmur telah berada di garis depan industri distribusi bahan kimia, berkomitmen untuk menyediakan solusi bahan kimia yang tak tertandingi yang meningkatkan kualitas barang-barang yang diproduksi secara domestik.",
-      "Komitmen kami yang teguh terhadap keunggulan dan inovasi telah menjadikan kami mitra terpercaya bagi bisnis di berbagai sektor, menawarkan seleksi bahan kimia yang dipilih dengan cermat untuk memenuhi berbagai kebutuhan."
-    ],
-    "aboutUsRightDescription": [
-      "Dengan visi yang teguh untuk mendorong kemajuan dan keberlanjutan, kami memberdayakan klien kami dengan sumber daya dan dukungan yang diperlukan untuk kesuksesan mereka.",
-      "Bergabunglah dengan kami dalam perjalanan menuju masa depan yang lebih cerah, di mana bahan kimia berkualitas menghasilkan produk berkualitas."
-    ],
-    "learnMore": "Pelajari Lebih Lanjut"
+    "hero": {
+      "heroTitle": "Supplier Bahan Kimia Untuk Kebutuhan Bisnis Anda",
+      "heroDescription": "Kami menyediakan solusi komprehensif untuk semua kebutuhan bahan kimia bisnis Anda."
+    },
+    "aboutUs": {
+      "aboutUsLeftDescription": [
+        "Sejak berdirinya pada bulan Mei 1989, PT Cahaya Sinar Makmur telah berada di garis depan industri distribusi bahan kimia, berkomitmen untuk menyediakan solusi bahan kimia yang tak tertandingi yang meningkatkan kualitas barang-barang yang diproduksi secara domestik.",
+        "Komitmen kami yang teguh terhadap keunggulan dan inovasi telah menjadikan kami mitra terpercaya bagi bisnis di berbagai sektor, menawarkan seleksi bahan kimia yang dipilih dengan cermat untuk memenuhi berbagai kebutuhan."
+      ],
+      "aboutUsRightDescription": [
+        "Dengan visi yang teguh untuk mendorong kemajuan dan keberlanjutan, kami memberdayakan klien kami dengan sumber daya dan dukungan yang diperlukan untuk kesuksesan mereka.",
+        "Bergabunglah dengan kami dalam perjalanan menuju masa depan yang lebih cerah, di mana bahan kimia berkualitas menghasilkan produk berkualitas."
+      ],
+      "learnMore": "Pelajari Lebih Lanjut"
+    },
+    "whyUs": {
+      "title": "Mengapa memilih",
+      "description": "Di Indonesia, PT. Cahaya Sinar Makmur menjadi perusahaan terkemuka dalam keunggulan distribusi bahan kimia. Komitmen kami untuk menyediakan produk berkualitas tinggi, ditambah dengan pelayanan pelanggan yang tak tertandingi, menjadikan kami pilihan utama untuk semua kebutuhan bahan kimia Anda.",
+      "whyUsQnAs": [
+        {
+          "question": "Bagaimana Anda menjamin kualitas produk kimia Anda?",
+          "answer": "Kami mematuhi prosedur kontrol kualitas yang ketat di setiap tahap rantai pasokan kami, mulai dari pengadaan hingga pengiriman. Produk kami dievaluasi secara ketat untuk memastikan bahwa mereka memenuhi standar keamanan dan kualitas internasional, memberikan solusi kimia terbaik kepada klien kami."
+        },
+        {
+          "question": "Bagaimana pelayanan pelanggan Anda membedakan Anda dari pesaing?",
+          "answer": "Pelayanan pelanggan kami tidak tertandingi, berfokus pada dukungan personal dan respons cepat. Tim kami berdedikasi untuk memberikan bimbingan ahli dan solusi yang efisien, memastikan kebutuhan Anda terpenuhi dengan cepat dan efektif, setiap saat."
+        },
+        {
+          "question": "Mengapa PT. Cahaya Sinar Makmur menjadi nama terpercaya di industri distribusi bahan kimia?",
+          "answer": "Dengan puluhan tahun pengalaman, PT. Cahaya Sinar Makmur telah membuktikan dirinya sebagai mitra yang dapat diandalkan di bidang distribusi bahan kimia. Pengetahuan industri yang mendalam, jaringan yang luas, dan komitmen kami terhadap keberlanjutan membuat kami menjadi pilihan terpercaya bagi bisnis yang mencari solusi kimia yang bertanggung jawab dan efisien."
+        },
+        {
+          "question": "Apa manfaat tambahan yang didapat klien dengan bermitra dengan Anda?",
+          "answer": "Klien mendapatkan manfaat dari pendekatan komprehensif kami dalam distribusi bahan kimia, yang mencakup harga yang kompetitif dan portofolio produk yang kuat. Kami juga menawarkan dukungan logistik dan manajemen inventaris, menjadikan proses pengadaan menjadi lancar dan efisien."
+        }
+      ]
+    },
+    "services": {
+      "title": "Pelayanan",
+      "serviceItems": [
+        {
+          "icon": "BiCheckCircle",
+          "title": "Kualitas",
+          "description": "Di Cahaya Sinar Makmur, kualitas adalah inti dari semua yang kami lakukan. Kami berusaha memberikan produk kimia berkualitas tertinggi kepada pelanggan kami."
+        },
+        {
+          "icon": "BiMedal",
+          "title": "Pengalaman",
+          "description": "Dengan pengalaman lebih dari 20 tahun di Indonesia, PT. Cahaya Sinar Makmur adalah mitra yang sempurna untuk perusahaan Anda."
+        },
+        {
+          "icon": "BiDollarCircle",
+          "title": "Efisien Biaya",
+          "description": "Mengapa harus puas dengan bahan mahal ketika kami bisa menyediakan kualitas yang sama dengan harga yang lebih rendah? Telusuri opsi harga khusus kami yang dirancang untuk bisnis Anda."
+        },
+        {
+          "icon": "FaUserAlt",
+          "title": "Berorientasi Pelayanan",
+          "description": "Rasakan pendekatan kami yang berorientasi pada pelanggan, di mana pelanggan baru dan yang sudah ada menerima pelayanan luar biasa yang mereka layak."
+        },
+        {
+          "icon": "BiTimeFive",
+          "title": "Pengiriman Tepat Waktu",
+          "description": "Kesulitan mengelola dan melacak pesanan Anda? Agen layanan kami yang terlatih menjamin pengiriman tepat waktu barang Anda."
+        },
+        {
+          "icon": "FaWarehouse",
+          "title": "Gudang Besar",
+          "description": "Terletak dekat jalan Daan Mogot, Pusat Logistik Indonesia PT. Cahaya Sinar Makmur memiliki gudang yang cukup besar. Kapasitas penyimpanan kami yang luas menjamin bahwa semua bahan kimia mematuhi standar regulasi dan persyaratan kualitas."
+        },
+        {
+          "icon": "IoMdSpeedometer",
+          "title": "Efisiensi",
+          "description": "Kami percaya bahwa efisiensi berada pada tiga pilar utama: Efisiensi Biaya, Kemudahan, dan Kepuasan Pelanggan. Dengan memegang teguh pilar-pilar ini, kami memastikan bahwa kami memenuhi standar efisiensi kami."
+        }
+      ]
+    },
+    "product": {
+      "description": "Jelajahi beragam produk kimia premium dari perusahaan kami, yang dirancang untuk mendukung dan mendorong perkembangan industri Anda."
+    },
+    "cta": {
+      "description": "Untuk pertanyaan, kerjasama, atau untuk mempelajari lebih lanjut tentang produk dan layanan kimia kami, jangan ragu untuk menghubungi kami. Tim kami yang berdedikasi siap membantu Anda dan memberikan informasi yang Anda butuhkan. Anda dapat menghubungi kami melalui telepon atau email. Kami menantikan kabar dari Anda dan berharap dapat mendiskusikan bagaimana kami dapat mendukung kebutuhan bisnis Anda."
+    },
+    "faq": {
+      "title": "Pertanyaan Yang Sering Ditanyakan",
+      "faqs": [
+        {
+          "question": "Produk apa yang ditawarkan oleh PT Cahaya Sinar Makmur?",
+          "answer": "PT Cahaya Sinar Makmur menawarkan berbagai produk kimia untuk berbagai industri, termasuk farmasi, pertanian, manufaktur, dan lain-lain. Portofolio produk kami mencakup pelarut, asam, basa, dan bahan kimia khusus, antara lain."
+        },
+        {
+          "question": "Berapa lama PT Cahaya Sinar Makmur berkecimpung di industri distribusi bahan kimia?",
+          "answer": "PT Cahaya Sinar Makmur telah berada di industri distribusi bahan kimia selama lebih dari 20 tahun, menjadikan kami mitra yang terpercaya dan dapat diandalkan bagi bisnis yang membutuhkan solusi bahan kimia berkualitas tinggi."
+        },
+        {
+          "question": "Apa nilai inti dan komitmen PT Cahaya Sinar Makmur kepada pelanggannya?",
+          "answer": "Nilai inti kami meliputi integritas, keunggulan, dan kepuasan pelanggan. Kami berkomitmen untuk menyediakan produk berkualitas tertinggi kepada pelanggan kami, pelayanan pelanggan yang luar biasa, dan solusi inovatif untuk memenuhi kebutuhan mereka."
+        },
+        {
+          "question": "Apa yang membedakan PT Cahaya Sinar Makmur dari distributor bahan kimia lainnya?",
+          "answer": "Kami membedakan diri kami melalui komitmen kami terhadap kualitas, pelayanan pelanggan, dan keberlanjutan. Fokus kami pada penyediaan produk berkualitas tinggi, pelayanan pelanggan yang personal, dan praktik berkelanjutan membuat kami menjadi mitra yang terpercaya di industri distribusi bahan kimia."
+        },
+        {
+          "question": "Industri apa yang dilayani oleh PT Cahaya Sinar Makmur?",
+          "answer": "Kami melayani berbagai industri, termasuk farmasi, pertanian, manufaktur, dan lain-lain. Portofolio produk kami yang beragam melayani kebutuhan unik setiap industri, menyediakan mereka dengan solusi bahan kimia berkualitas tinggi."
+        }
+      ]
+    }
   },
   "aboutUsPage": {
     "ourGoalsTitle": "Tujuan Kami",
@@ -38,6 +135,7 @@
   "contactUsPage": {
     "contactUsDescription": "Untuk pertanyaan, masukan, atau peluang kemitraan, jangan ragu untuk menghubungi kami menggunakan informasi yang tertera di bawah ini. Kami menyambut baik kesempatan untuk membahas kolaborasi potensial dengan Anda."
   },
+  "seeMore": "Lihat Lebih Lanjut",
   "location": "Lokasi",
   "email": "Email",
   "call": "Hubungi",

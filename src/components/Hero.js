@@ -14,8 +14,8 @@ function Hero() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h1>{t("homePage.heroTitle")}</h1>
-            <h2>{t("homePage.heroDescription")}</h2>
+            <h1>{t("homePage.hero.heroTitle")}</h1>
+            <h2>{t("homePage.hero.heroDescription")}</h2>
             <div className="d-flex justify-content-center">
               <div
                 to="#about"

@@ -2,18 +2,17 @@ import React from "react";
 import { PRODUCT_CATEGORIES } from "../data/data";
 import { toProperCase } from "../utils/stringUtil";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Products() {
+  const { t } = useTranslation();
+
   return (
     <section id="product" className="product">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
-          <h2>Products</h2>
-          <p>
-            Explore a wide selection of premium chemical products from our
-            company, designed to support and advance your industry's
-            development.
-          </p>
+          <h2>{t("products")}</h2>
+          <p>{t("homePage.product.description")}</p>
         </div>
 
         <div
@@ -36,7 +35,7 @@ function Products() {
         </div>
 
         <Link to="/products" className="btn-show-more">
-          See More
+          {t("seeMore")}
         </Link>
       </div>
     </section>

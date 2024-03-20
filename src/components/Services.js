@@ -7,59 +7,52 @@ import {
   BiMedal,
   BiTimeFive,
 } from "react-icons/bi";
+import { ensureArray } from "../utils/stringUtil";
+import { useTranslation } from "react-i18next";
 
 function Services() {
-  const serviceItems = [
-    {
-      icon: <BiCheckCircle />,
-      title: "Quality",
-      description:
-        "At Cahaya Sinar Makmur, quality is at the core of everything we do. We strive to provide our customers with the highest quality chemical products.",
-    },
-    {
-      icon: <BiMedal />,
-      title: "Experience",
-      description:
-        "With over 20 years of experience in Indonesia, PT. Cahaya Sinar Makmur is the perfect partner for your company.",
-    },
-    {
-      icon: <BiDollarCircle />,
-      title: "Cost-Effective",
-      description:
-        "Why settle for costly materials when we can deliver the same quality at a lower price? Explore our special pricing options designed for your business.",
-    },
-    {
-      icon: <FaUserAlt />,
-      title: "Service Oriented",
-      description:
-        "Experience our customer-centric approach, where both new and existing customers receive the exceptional service they deserve.",
-    },
-    {
-      icon: <BiTimeFive />,
-      title: "On-Time Delivery",
-      description:
-        "Struggling to manage and track your orders? Our trained service agents guarantee on-time delivery of your goods.",
-    },
-    {
-      icon: <FaWarehouse />,
-      title: "Large Warehouse",
-      description:
-        "Situated near Daan Mogot road, PT. Cahaya Sinar Makmur's Indonesia Logistic Center features a sizable warehouse. Our expansive storage capacity guarantees that all chemicals comply with regulatory standards and quality requirements.",
-    },
-    {
-      icon: <IoMdSpeedometer />,
-      title: "Efficiency",
-      description:
-        "We believe that efficiency rests on three key pillars: Cost-effectiveness, Convenience, and Customer Satisfaction. By upholding these pillars, we ensure that we meet our efficiency standards.",
-    },
-  ];
+  const { t } = useTranslation();
+
+  const serviceItems = ensureArray(
+    t("homePage.services.serviceItems", { returnObjects: true })
+  );
   const splitPoint = 4;
+
+  const setServiceItemIcon = (iconName) => {
+    let icon = undefined;
+    switch (iconName) {
+      case "BiCheckCircle":
+        icon = <BiCheckCircle />;
+        break;
+      case "BiMedal":
+        icon = <BiMedal />;
+        break;
+      case "BiDollarCircle":
+        icon = <BiDollarCircle />;
+        break;
+      case "FaUserAlt":
+        icon = <FaUserAlt />;
+        break;
+      case "BiTimeFive":
+        icon = <BiTimeFive />;
+        break;
+      case "FaWarehouse":
+        icon = <FaWarehouse />;
+        break;
+      case "IoMdSpeedometer":
+        icon = <IoMdSpeedometer />;
+        break;
+      default:
+        break;
+    }
+    return icon;
+  };
 
   return (
     <section id="services" className="services section-bg">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
-          <h2>Services</h2>
+          <h2>{t("homePage.services.title")}</h2>
         </div>
 
         {[...Array(Math.ceil(serviceItems.length / splitPoint))].map(
@@ -96,7 +89,10 @@ function Services() {
                     >
                       <div className="icon-box">
                         <div className="icon">
-                          <div className="icon-service">{service.icon}</div>
+                          <div className="icon-service">
+                            {setServiceItemIcon(service.icon)}
+                          </div>
+                          {/* <div className="icon-service">{service.icon}</div> */}
                         </div>
                         <h4>{service.title}</h4>
                         <p>{service.description}</p>

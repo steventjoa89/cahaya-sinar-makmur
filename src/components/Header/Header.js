@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { COMPANY_NAME, MENU_NAV } from "../../data/data";
+import { COMPANY_NAME } from "../../data/data";
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
 import LanguageSelector from "./LanguageSelector";

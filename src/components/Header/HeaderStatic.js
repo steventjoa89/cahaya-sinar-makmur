@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { COMPANY_NAME, MENU_NAV } from "../../data/data";
+import { COMPANY_NAME } from "../../data/data";
 import { MdMenu } from "react-icons/md";
 import LanguageSelector from "./LanguageSelector";
 import { useTranslation } from "react-i18next";

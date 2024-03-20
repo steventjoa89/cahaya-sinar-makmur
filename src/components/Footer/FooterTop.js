@@ -6,7 +6,6 @@ import {
   COMPANY_EMAIL,
   COMPANY_NAME,
   COMPANY_PHONE,
-  MENU_NAV,
 } from "../../data/data";
 import { Link } from "react-router-dom";
 import { FaChevronRight, FaGoogle, FaLinkedin } from "react-icons/fa";

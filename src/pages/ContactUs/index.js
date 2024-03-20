@@ -20,7 +20,7 @@ function ContactUsPage() {
     <>
       <HeaderStatic activeMenu="contact" />
       <main id="main" style={{ borderBottom: "2px solid #f3f5fa" }}>
-        <BreadCrumb breadCrumbPath={["Contact Us"]} />
+        <BreadCrumb breadCrumbPath={[t("contactUs")]} />
 
         <section id="contact" className="contact">
           <div

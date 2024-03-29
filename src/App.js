@@ -1,15 +1,26 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "./pages/Home";
 import AboutUsPage from "./pages/AboutUs";
 import ProductPage from "./pages/Product";
 import ContactUsPage from "./pages/ContactUs";
 import ScrollToTopOnRedirect from "./utils/scrollToTopOnRedirect";
+import Footer from "./components/Footer/Footer";
+import BackToTop from "./components/BackToTop";
+import Header from "./components/Header/Header";
+import HeaderStatic from "./components/Header/HeaderStatic";
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="App">
       <ScrollToTopOnRedirect />
+      {location.pathname === "/" ? (
+        <Header />
+      ) : (
+        <HeaderStatic activeMenu={location.pathname} />
+      )}
       <Routes>
         <Route path="/" element={<HomePage />} exact />
         <Route path="/about-us" element={<AboutUsPage />} />
@@ -17,6 +28,9 @@ function App() {
         {/* <Route path="/products/:id" element={<ProductDetailsPage />} /> */}
         <Route path="/contact-us" element={<ContactUsPage />} />
       </Routes>
+      {/* Static Footer */}
+      <Footer />
+      <BackToTop />
     </div>
   );
 }

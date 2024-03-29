@@ -35,7 +35,7 @@ function HeaderStatic({ activeMenu = "" }) {
                 <Link
                   to={menu.link}
                   className={`nav-link scroll-to ${
-                    activeMenu === (menu.menuName || "") && "active"
+                    activeMenu === (menu.link || "") && "active"
                   }`}
                 >
                   {menu.name}

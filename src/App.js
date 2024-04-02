@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "./pages/Home";
 import AboutUsPage from "./pages/AboutUs";
 import ProductPage from "./pages/Product";
@@ -22,11 +22,14 @@ function App() {
         <HeaderStatic activeMenu={location.pathname} />
       )}
       <Routes>
-        <Route path="/" element={<HomePage />} exact />
+        <Route exact path="/" element={<HomePage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/products" element={<ProductPage />} />
         {/* <Route path="/products/:id" element={<ProductDetailsPage />} /> */}
         <Route path="/contact-us" element={<ContactUsPage />} />
+
+        {/* Redirect any unmatched route to HomePage */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       {/* Static Footer */}
       <Footer />

@@ -37,6 +37,7 @@ function HeaderStatic({ activeMenu = "" }) {
                   className={`nav-link scroll-to ${
                     activeMenu === (menu.link || "") && "active"
                   }`}
+                  onClick={isMobileNavOpen && toggleMobileNav}
                 >
                   {menu.name}
                 </Link>

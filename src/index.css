@@ -309,6 +309,10 @@ h6 {
   #header .logo {
     font-size: 18px;
   }
+
+  iframe {
+    min-height: 300px; /* Adjust as needed */
+  }
 }
 
 .navbar-mobile {
@@ -1968,6 +1972,7 @@ code {
     margin-bottom: 15px; /* space between items */
   }
 }
+
 
 /* Additional CSS */
 .inner-page h2 {

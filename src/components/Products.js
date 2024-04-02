@@ -24,7 +24,11 @@ function Products() {
             <div key={i} className="col-lg-3 col-md-6 product-item">
               <Link to="/products">
                 <div className="product-img">
-                  <img src={category.image} className="img-fluid" alt="" />
+                  <img
+                    src={process.env.PUBLIC_URL + category.image}
+                    className="img-fluid"
+                    alt={category.name}
+                  />
                 </div>
                 <div className="product-info">
                   <p>{toProperCase(category.name)}</p>

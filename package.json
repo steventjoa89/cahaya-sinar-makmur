@@ -24,6 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
+    "generate-sitemap": "node src/generate-sitemap.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -47,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "sitemap": "^7.1.1"
   }
 }
